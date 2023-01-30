@@ -1,5 +1,5 @@
 <h1>Hi, I'm Banke! <br/><a href="https://github.com/BankeOlufon">Computer Science Student</a> and 
-<a href="www.linkedin.com/in/banke-olufon">Cyber Security Analyst Intern</a>
+<a href="https://www.linkedin.com/in/banke-olufon/">Cyber Security Analyst Intern</a>
 
 <h2>👩🏾‍💻 Cyber Security Projects:</h2>
 
