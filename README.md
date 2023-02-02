@@ -3,8 +3,7 @@
 
 <h2>👩🏾‍💻 Cyber Security Projects:</h2>
 
-- <b>Keylogger Project</b>
-  - [Simple Keylogger with Python](https://github.com/BankeOlufon/KeyLogger)
+- <b>[Keylogger Project](https://github.com/BankeOlufon/KeyLogger)</b>
 
 <h2>📄 Certifications</h2>
 
