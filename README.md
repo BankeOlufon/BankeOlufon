@@ -4,10 +4,7 @@
 <h2>👩🏾‍💻 Cyber Security Projects:</h2>
 
 - <b>Keylogger Project</b>
-  - [Simple Keylogger with Python](#)
-  
-- <b>Cyber Security Home Lab (Blue Team)</b>
-  - [Created using Kali Linux VM](https://github.com/BankeOlufon/HomeLab)
+  - [Simple Keylogger with Python](https://github.com/BankeOlufon/KeyLogger)
 
 <h2>📄 Certifications</h2>
 
