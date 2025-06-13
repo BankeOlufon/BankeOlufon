@@ -1,4 +1,4 @@
-# Hello, I'm Banke
+# Hello, I'm Banke 🎀🌻
 <a href="https://www.linkedin.com/in/banke-olufon/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 I am a recent graduate with a profound interest in technology and a dedication to solving complex problems.
@@ -11,7 +11,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
-| SIEM Implementation and Log Analysis          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md>Detection Lab</a>|
+| SIEM Implementation and Log Analysis          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
 
 ## Tools
@@ -38,5 +38,5 @@ I am proficient in the following tools:
 </div>
 
 ## Projects
-- Detection Lab
+- <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Detection Lab</a>
 - SOC Automation Project
