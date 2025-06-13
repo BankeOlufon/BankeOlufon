@@ -30,11 +30,10 @@ I am proficient in the following tools:
 </div>
 
 ## Certifications
-[Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
 <div>
-<img alt="Static Badge" src="https://img.shields.io/badge/Security%20%2B-red">
-<img src="https://img.shields.io/badge/ISO27001-blue">
-<img src="https://img.shields.io/badge/Google%20IT%20Support%20Specialisation-yellow">
+<img src="https://img.shields.io/badge/-Security+-D32F2F?&style=for-the-badge&logo=CompTIA&logoColor=white" />
+<img src="https://img.shields.io/badge/-ISO_27001_Lead_Implementer-0078D4?&style=for-the-badge&logo=ISO&logoColor=white" />
+<img src="https://img.shields.io/badge/Google_IT_Support_Specialization-FFD700?&style=for-the-badge&logo=Google&logoColor=white" />
 
 </div>
 
