@@ -11,7 +11,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
-| Setting Up A Firewall          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Detection Lab</a>|
+| Setting Up A Homelab          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Home Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
 
 ## Tools
