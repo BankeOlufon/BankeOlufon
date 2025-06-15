@@ -38,5 +38,5 @@ I am proficient in the following tools:
 </div>
 
 ## Projects
-- <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Detection Lab</a>
-- SOC Automation Project
+- <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Home Lab</a>
+- <a href="https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">Phishing Simulator</a>
