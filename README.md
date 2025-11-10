@@ -14,7 +14,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Setting Up A Homelab          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Home Lab</a>|
 | Phishing Analysis Simulator wihth BTLO | <a href="https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">Phishing Simulator</a>|
 | OWASP Juice Shop - Threat Detection using Wireshark, Burpsuite and Splunk| <a href="https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">OWASP Juice Shop</a>|
-| ARP Spoofing on a Wireless Network for a Financial Institution| <a href="[https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">ARP Spoofingg</a>|
+| ARP Spoofing on a Wireless Network for a Financial Institution| <a href="https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">ARP Spoofing</a>|
 
 ## Tools
 I am proficient in the following tools:
