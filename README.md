@@ -1,7 +1,7 @@
 # Hello, I'm Banke 🎓
 <a href="https://www.linkedin.com/in/banke-olufon/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
-I am a junior cyber security consultant, with an interest in penetration testing and threat intelligence.
+I am a cyber security consultant, with an interest in penetration testing and threat intelligence.
 
 ## Objective
 
@@ -12,7 +12,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
 | Setting Up A Homelab          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">Home Lab</a>|
-| Setting Up an Active Directory Homelab          | <a href="https://github.com/BankeOlufon/Detection-Lab/blob/main/README.md">AD Lab</a>|
+| Setting Up an Active Directory Homelab          | <a href="https://github.com/BankeOlufon/AD-Lab/blob/main/README.md">AD Lab</a>|
 | Phishing Analysis Simulator wihth BTLO | <a href="https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">Phishing Simulator</a>|
 | Firewall Configuration with PfSense | <a href="https://github.com/BankeOlufon/PfSense-Firewall-Configuration">Firewall Configuration</a>|
 | OWASP Juice Shop - Threat Detection using Wireshark, Burpsuite and Splunk| <a href="https://github.com/BankeOlufon/Phishing-Simulator---BLTO/blob/main/README.md">OWASP Juice Shop</a>|
