@@ -6,11 +6,11 @@
 ## 📂 Projects
 
 ### 🌐 Cloud Security & Enterprise Defense
-- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/azure1.md)  
+- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)  
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
 - [**Threat Detection Engineering & Distributed SIEM Operations**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
   Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
-- [**Assumed-Breach Emulation & Security Controls Validation**](#)  
+- [**Assumed-Breach Emulation & Security Controls Validation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project3.md)  
   Offensive simulations to validate defensive visibility and response thresholds.  
 - [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](#)  
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
