@@ -70,20 +70,9 @@ KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, 
 ## 🛠️ Tools / Scripting / Programming
 Top 10 tools and skills relevant to my focus areas (Pentesting, Cloud Security, Detection Engineering, AI Red Teaming):
 
-- **Wireshark** – Packet capture & analysis  
-- **Burp Suite** – Web application penetration testing  
-- **Metasploit** – Exploitation framework for offensive testing  
-- **Kali Linux** – Offensive security toolkit  
-- **Microsoft Sentinel** – SIEM & detection engineering  
-- **Terraform** – Infrastructure as Code security reviews  
-- **Azure Defender / Security Center** – Cloud posture management  
-- **PyRIT** – AI red teaming framework  
-- **Ghidra** – Reverse engineering & firmware analysis  
-- **Okta / Identity Governance** – SaaS identity pentesting & federation security
-- **Microsoft Graph**
-- **KQL**
-- **Python**
-- **JS**
+- **Offensive Security: Wireshark** , **Burp Suite** , **Kali Linux**, **PyRIT**, **Ghidra**
+- **Cloud Security: Microsoft Sentinel**, **Terraform**, **Azure Defender / Security Center** , **Okta / Identity Governance**, **Microsoft Graph**, **KQL**
+- **Programming/Scripting/Query: Python, JS, KQL**
 
 ---
 
