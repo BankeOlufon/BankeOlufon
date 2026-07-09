@@ -1,54 +1,82 @@
-# Enterprise Cloud Infrastructure & Identity Lifecycle Engineering
+# 🏢 Enterprise Cloud Infrastructure & Identity Lifecycle Engineering
 
 ## 📌 Project Overview
-This project focuses on building and securing an **Azure tenant** with strong **RBAC (Role-Based Access Control) hardening** and identity lifecycle management.  
-The goal was to simulate a real enterprise environment and apply **cloud security best practices** for identity governance.
+An enterprise-grade cloud engineering case study focusing on designing, deploying, and hardening a secure Azure infrastructure from scratch.  
+This project demonstrates foundational mastery over identity boundaries, network isolation, directory role delegation, and programmatic resource isolation.  
+The ultimate goal: build an identity and infrastructure foundation that natively aligns with the principle of least privilege before any corporate data or workloads are deployed.
 
 ---
 
-## 🎯 Objectives
-- Set up a dedicated Azure tenant for enterprise workloads  
-- Implement **RBAC policies** to enforce least privilege  
-- Configure **identity lifecycle management** (onboarding, role changes, offboarding)  
-- Align controls with **Zero Trust principles**  
-- Document security gaps and remediation steps  
+## 🎯 Core Areas Covered
+- Cloud Infrastructure Architecture & Network Isolation  
+- Identity & Access Management (IAM) Governance  
+- Granular Role-Based Access Control (RBAC) Mapping  
+- Perimeter Hardening & Network Access Control Lists (ACLs)  
 
 ---
 
-## 🛠️ Implementation Steps
-1. **Tenant Setup** – Created Azure tenant with baseline subscriptions and Azure AD groups  
-2. **RBAC Hardening** – Applied least privilege roles, removed excessive permissions  
-3. **Identity Lifecycle Management** – Automated onboarding/offboarding with conditional access policies  
-4. **Security Validation** – Simulated misconfigurations and privilege escalation attempts, validated detection via Microsoft Sentinel  
+## 🛠️ Technical Tasks & Functions Performed
+
+### Identity & Tenant Directory Setup
+- Provisioned a dedicated corporate directory tenant and mapped root administrative subscription boundaries.  
+- Established a scalable directory hierarchy separating user identities by operational type (Member vs. Guest) and origin (Cloud-only vs. External).  
+- Designed a group-based administration framework to eliminate direct, non-standard user privileges.  
+
+### Infrastructure Isolation & Network Hardening
+- Designed and deployed isolated Virtual Networks (VNets) with distinct IP address spaces and custom subnets.  
+- Hardened compute network perimeters using Network Security Groups (NSGs) with strict inbound/outbound ACLs.  
+- Configured Private Endpoints and Service Endpoints to isolate production storage accounts and key vaults from public internet access.  
+
+### Access Control & Directory Role Governance
+- Implemented administrative segregation between Entra ID roles and Azure RBAC scopes.  
+- Configured custom administrative permissions using least privilege principles.  
+- Enforced Multi-Factor Authentication (MFA) and created a secure Break-Glass account recovery framework.  
+
+<!--
+---
+
+## 📊 Phase Mapping Context
+- Phase 1: Identity & Tenant Foundation  
+- Phase 2: Resource Design & Directory Storage Architecture  
+- Phase 4: Enterprise Identity Governance & Authentication Hardening  
+- Phase 5: Virtual Networking & Compute Resource Deployment  
+- Phase 11: Infrastructure Translation to Code (Terraform)  
 
 ---
 
-## 🔐 Security Angles
-- Least Privilege Enforcement  
-- Conditional Access & MFA  
-- Lifecycle Controls (onboarding/offboarding)  
-- Detection Engineering with Sentinel  
+## 🔐 Security Outcomes
+- Enforced least privilege across directory and infrastructure roles.  
+- Hardened perimeter with strict ACLs and NSGs.  
+- Reduced risk of orphaned accounts with lifecycle governance.  
+- Established recovery safeguards for privileged access.  
 
 ---
 
-## 📊 Results
-- Hardened Azure tenant with clear RBAC boundaries  
-- Documented identity lifecycle workflows  
-- Validated detection rules against simulated attacks  
-- Produced a security report with remediation recommendations  
+## 📷 Portfolio Artifacts
+[Placeholder: Architecture diagram of Azure tenant hierarchy]  
+[Placeholder: Screenshot of RBAC role assignments]  
+[Placeholder: Terraform code snippet for VNet deployment]  
 
 ---
+
+## 📈 Why This Matters to Employers
+This project proves the ability to design secure cloud foundations before workloads are deployed. It demonstrates practical knowledge of IAM governance, network isolation, and infrastructure-as-code — all critical for enterprise cloud adoption.
+
+-->
+
+---
+
 
 ## 📚 Skills Demonstrated
 - Azure AD & RBAC configuration  
+- Network Security Groups & Private Endpoints  
 - Identity lifecycle management  
-- Zero Trust architecture principles  
-- Detection engineering with Microsoft Sentinel  
+- Terraform for Infrastructure as Code  
 
 ---
 
 ## 🔗 Related Projects
-This project is part of the larger **Azure Cloud Security Portfolio**, linked with:  
 - [Threat Detection Engineering & Distributed SIEM Operations](#)  
+- [Assumed-Breach Emulation & Security Controls Validation](#)  
 - [Zero Trust Remote Endpoint Architecture & Cloud XDR Integration](#)  
-- [Multi-Cloud Security Posture Management](#)  
+- [Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)](#)  
