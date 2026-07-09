@@ -6,7 +6,7 @@
 ## 📂 Projects
 
 ### 🌐 Cloud Security & Enterprise Defense
-- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](#)  
+- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/azure1.md)  
   Azure tenant setup with RBAC hardening and lifecycle management.  
 - [**Threat Detection Engineering & Distributed SIEM Operations**](#)  
   Detection rules and automation in Microsoft Sentinel + Splunk.  
