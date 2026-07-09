@@ -20,39 +20,39 @@
 ---
 
 ### 🔒 Offensive Security & Red Teaming
-- [**Linux Web App Exploitation Lab (Initial Access)**](#)  
+- [**Linux Web App Exploitation Lab (Initial Access)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project6.md)  
   OSCP‑style exploitation of vulnerable Linux web applications.  
-- [**Windows Privilege Escalation Lab (Local Takeover)**](#)  
+- [**Windows Privilege Escalation Lab (Local Takeover)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project7.md)  
   Misconfigurations leveraged to escalate from user to SYSTEM.  
-- [**Active Directory Domain Pivot Lab (Network Conquest)**](#)  
+- [**Active Directory Domain Pivot Lab (Network Conquest)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project8.md)  
   Credential theft and lateral movement to compromise domain controllers.  
-- [**SaaS Security & Identity Pentesting (Okta Federation, SCIM, OAuth)**](#)  
+- [**SaaS Security & Identity Pentesting (Okta Federation, SCIM, OAuth)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project9.md)  
   Identity exploitation in SaaS ecosystems using adversarial simulations.  
-- [**ARP Spoofing on a Wireless Network (Financial Institution Simulation)**](#)  
+- [**ARP Spoofing on a Wireless Network (Financial Institution Simulation)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  
   MITM attack emulation with detection and mitigation strategies.  
 
 ---
 
 ### 📡 IoT / Embedded & Cyber-Physical Security
-- [**Hardened IoT Media Deck (ESP32-S3)**](#)  
+- [**Hardened IoT Media Deck (ESP32-S3)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project11.md)  
   Secure cyberdeck camera with encryption, BLE privacy, and anti‑tamper routines.  
-- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](#)  
+- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)  
   Sensor fusion for visually impaired navigation with cyber‑physical threat modeling.  
-- [**IoT Firmware Reverse Engineering & Vulnerability Research Lab**](#)  
+- [**IoT Firmware Reverse Engineering & Vulnerability Research Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project13.md)  
   Binwalk, Ghidra, and QEMU analysis of IoT firmware binaries.  
-- [**Arduino Secure RFID Door Lock System**](#)  
+- [**Arduino Secure RFID Door Lock System**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project14.md)  
   Physical access control with firmware hardening and lock bit protections.  
 
 ---
 
 ### 🤖 AI Security & Red Teaming
-- [**Agentic AI Abuse & Privilege Escalation Lab (PyRIT)**](#)  
+- [**Agentic AI Abuse & Privilege Escalation Lab (PyRIT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
   Automated red teaming of AI agents, testing excessive agency and prompt injection.  
 
 ---
 
 ### 🎮 Miscellaneous / Creative
-- [**P5.js Game Development Project**](#)  
+- [**P5.js Game Development Project**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project16.md)  
   Interactive coding project with character movement, obstacles, and lives system.  
 
 ---
