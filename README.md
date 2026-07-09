@@ -66,7 +66,7 @@ KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, 
 
 ---
 
-## 🛠️ Tools
+## 🛠️ Tools / Scripting / Programming
 Top 10 tools and skills relevant to my focus areas (Pentesting, Cloud Security, Detection Engineering, AI Red Teaming):
 
 - **Wireshark** – Packet capture & analysis  
@@ -81,6 +81,8 @@ Top 10 tools and skills relevant to my focus areas (Pentesting, Cloud Security, 
 - **Okta / Identity Governance** – SaaS identity pentesting & federation security
 - **Microsoft Graph**
 - **KQL**
+- **Python**
+- **JS**
 
 ---
 
