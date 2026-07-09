@@ -1,4 +1,4 @@
-# Hello, I'm Banke 
+# Hello, I'm Banke 🎓
 <a href="https://www.linkedin.com/in/banke-olufon/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 ---
@@ -7,55 +7,55 @@
 
 ### 🌐 Cloud Security & Enterprise Defense
 - [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/azure1.md)  
-  Azure tenant setup with RBAC hardening and lifecycle management.  
+  Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
 - [**Threat Detection Engineering & Distributed SIEM Operations**](#)  
-  Detection rules and automation in Microsoft Sentinel + Splunk.  
+  Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
 - [**Assumed-Breach Emulation & Security Controls Validation**](#)  
-  Simulated cloud attack paths to validate defense effectiveness.  
+  Offensive simulations to validate defensive visibility and response thresholds.  
 - [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](#)  
-  Endpoint hardening with Intune, Defender, and conditional access.  
-- [**Multi-Cloud Security Posture Management (AWS + Azure + Wiz/Trend Micro)**](#)  
-  Centralized dashboard for posture management and toxic combination detection.  
+  Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
+- [**Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)**](#)  
+  Unified dashboard for toxic combination detection across AWS and Azure.  
 
 ---
 
 ### 🔒 Offensive Security & Red Teaming
 - [**Linux Web App Exploitation Lab (Initial Access)**](#)  
-  Web application vulnerabilities leading to shell access.  
+  OSCP‑style exploitation of vulnerable Linux web applications.  
 - [**Windows Privilege Escalation Lab (Local Takeover)**](#)  
-  Misconfig exploitation to escalate from user to SYSTEM.  
+  Misconfigurations leveraged to escalate from user to SYSTEM.  
 - [**Active Directory Domain Pivot Lab (Network Conquest)**](#)  
-  Credential theft and lateral movement to domain controller.  
+  Credential theft and lateral movement to compromise domain controllers.  
 - [**SaaS Security & Identity Pentesting (Okta Federation, SCIM, OAuth)**](#)  
-  Identity exploitation in SaaS environments.  
+  Identity exploitation in SaaS ecosystems using adversarial simulations.  
 - [**ARP Spoofing on a Wireless Network (Financial Institution Simulation)**](#)  
-  Network MITM attack simulation with detection and mitigation.  
+  MITM attack emulation with detection and mitigation strategies.  
 
 ---
 
 ### 📡 IoT / Embedded & Cyber-Physical Security
-- [**Secure Bratz-Inspired Cyberdeck Camera (ESP32-S3)**](#)  
-  Firmware hardening, BLE privacy, and anti-tamper security.  
+- [**Hardened IoT Media Deck (ESP32-S3)**](#)  
+  Secure cyberdeck camera with encryption, BLE privacy, and anti‑tamper routines.  
 - [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](#)  
-  Sensor spoofing defense and safety-critical threat modeling.  
+  Sensor fusion for visually impaired navigation with cyber‑physical threat modeling.  
 - [**IoT Firmware Reverse Engineering & Vulnerability Research Lab**](#)  
-  Binwalk, Ghidra, and QEMU analysis of IoT firmware images.  
-- [**Arduino RFID Door Lock System**](#)  
-  Physical + firmware security assessment and hardening.  
+  Binwalk, Ghidra, and QEMU analysis of IoT firmware binaries.  
+- [**Arduino Secure RFID Door Lock System**](#)  
+  Physical access control with firmware hardening and lock bit protections.  
 
 ---
 
 ### 🤖 AI Security & Red Teaming
 - [**Agentic AI Abuse & Privilege Escalation Lab (PyRIT)**](#)  
-  Automated red teaming of AI agents, testing for excessive agency and prompt injection vulnerabilities.  
+  Automated red teaming of AI agents, testing excessive agency and prompt injection.  
 
 ---
 
 ### 🎮 Miscellaneous / Creative
 - [**P5.js Game Development Project**](#)  
-  Creative coding.  
+  Interactive coding project with character movement, obstacles, and lives system.  
 
-  ---
+---
 
 ## 🛠️ Tools
 Top 10 tools and skills relevant to my focus areas (Pentesting, Cloud Security, Detection Engineering, AI Red Teaming):
@@ -65,14 +65,17 @@ Top 10 tools and skills relevant to my focus areas (Pentesting, Cloud Security, 
 - **Metasploit** – Exploitation framework for offensive testing  
 - **Kali Linux** – Offensive security toolkit  
 - **Microsoft Sentinel** – SIEM & detection engineering  
-- **Splunk** – Log analysis & threat hunting  
 - **Terraform** – Infrastructure as Code security reviews  
 - **Azure Defender / Security Center** – Cloud posture management  
 - **PyRIT** – AI red teaming framework  
 - **Ghidra** – Reverse engineering & firmware analysis  
+- **Okta / Identity Governance** – SaaS identity pentesting & federation security
+- **Microsoft Graph**
+- **KQL**
 
-## Certifications
+---
 
+## 🎓 Certifications
 <p>
   <img src="https://img.shields.io/badge/-Security+-D32F2F?style=for-the-badge&logo=CompTIA&logoColor=white" />
   <img src="https://img.shields.io/badge/-ISO_27001_Lead_Implementer-0078D4?style=for-the-badge&logo=ISO&logoColor=white" />
