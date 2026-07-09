@@ -24,7 +24,7 @@
 - [**Password Cracking Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
  Hashcat/John the Ripper against a small hash set (e.g., MD5 or NTLM). Expressed cracking speed and mitigation (stronger hashing, salting).
 - [**Container Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project18.md)  
- Spin up a Docker container with a vulnerable app (like DVWA), run docker scan or Trivy, show misconfigurations, and patch them. Fast, and employers love container security.
+ Docker container with DVWA), ran Trivy, explored misconfigurations, and patched them. 
 -- [**Sentinel Playbook**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project19.md)  
 KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, suspicious PowerShell). 
 
