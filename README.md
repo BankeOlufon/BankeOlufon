@@ -24,7 +24,12 @@
 - [**Container Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project18.md)  
  Docker container with DVWA), ran Trivy, explored misconfigurations, and patched them. 
 - [**Sentinel Playbook**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project19.md)  
-KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, suspicious PowerShell). 
+KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, suspicious PowerShell).
+
+---
+ 🛜 Network Security
+- [**Azure Infrastructure & Network Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md)
+  Simulated misconfigurations such as public VM exposure, lateral movement from compromised VMs, and private endpoint bypasses
 
 ---
 
