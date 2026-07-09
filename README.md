@@ -3,6 +3,9 @@
 
 ---
 
+## This portfolio showcases 19 hands‑on security projects spanning cloud defense, offensive tradecraft, IoT/embedded systems, AI red teaming, and creative coding. Each project is designed to demonstrate practical skills across the cybersecurity lifecycle - from building hardened cloud infrastructure and authoring custom detections, to emulating adversarial attacks and reverse engineering firmware. 
+## The projects below highlight expertise in enterprise defense (Azure, AWS, Sentinel, XDR), red teaming and exploitation (OSCP‑style labs, AD pivots, SaaS pentesting), cyber‑physical security (IoT devices, RFID access control, firmware analysis), and emerging domains (AI agent abuse with PyRIT).
+
 ## 📂 Projects
 
 ### 🌐 Cloud Security & Enterprise Defense
@@ -15,7 +18,13 @@
 - [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project4.md)  
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
 - [**Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
-  Unified dashboard for toxic combination detection across AWS and Azure.  
+  Unified dashboard for toxic combination detection across AWS and Azure.
+- [**Password Cracking Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
+ Hashcat/John the Ripper against a small hash set (e.g., MD5 or NTLM). Expressed cracking speed and mitigation (stronger hashing, salting).
+- [**Container Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project18.md)  
+ Spin up a Docker container with a vulnerable app (like DVWA), run docker scan or Trivy, show misconfigurations, and patch them. Fast, and employers love container security.
+-- [**Sentinel Playbook**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project19.md)  
+KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, suspicious PowerShell). 
 
 ---
 
