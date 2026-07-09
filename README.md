@@ -8,7 +8,7 @@
 ### 🌐 Cloud Security & Enterprise Defense
 - [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/azure1.md)  
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
-- [**Threat Detection Engineering & Distributed SIEM Operations**](#)  
+- [**Threat Detection Engineering & Distributed SIEM Operations**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
   Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
 - [**Assumed-Breach Emulation & Security Controls Validation**](#)  
   Offensive simulations to validate defensive visibility and response thresholds.  
