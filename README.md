@@ -44,7 +44,7 @@ KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, 
 ---
 
 ### 📡 IoT / Embedded & Cyber-Physical Security
-- [**Hardened IoT Media Deck (ESP32-S3)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project11.md)  
+- [**Bratz Cyberdeck Camera: Hardened IoT Media Deck (ESP32-S3)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project11.md)  
   Secure cyberdeck camera with encryption, BLE privacy, and anti‑tamper routines.  
 - [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)  
   Sensor fusion for visually impaired navigation with cyber‑physical threat modeling.  
