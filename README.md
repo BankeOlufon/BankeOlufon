@@ -12,9 +12,9 @@
   Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
 - [**Assumed-Breach Emulation & Security Controls Validation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project3.md)  
   Offensive simulations to validate defensive visibility and response thresholds.  
-- [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](#)  
+- [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project4.md)  
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
-- [**Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)**](#)  
+- [**Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
   Unified dashboard for toxic combination detection across AWS and Azure.  
 
 ---
