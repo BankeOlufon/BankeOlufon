@@ -21,11 +21,9 @@
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
 - [**Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
   Unified dashboard for toxic combination detection across AWS and Azure.
-- [**Password Cracking Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
- Hashcat/John the Ripper against a small hash set (e.g., MD5 or NTLM). Expressed cracking speed and mitigation (stronger hashing, salting).
 - [**Container Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project18.md)  
  Docker container with DVWA), ran Trivy, explored misconfigurations, and patched them. 
--- [**Sentinel Playbook**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project19.md)  
+- [**Sentinel Playbook**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project19.md)  
 KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, suspicious PowerShell). 
 
 ---
@@ -40,8 +38,9 @@ KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, 
 - [**SaaS Security & Identity Pentesting (Okta Federation, SCIM, OAuth)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project9.md)  
   Identity exploitation in SaaS ecosystems using adversarial simulations.  
 - [**ARP Spoofing on a Wireless Network (Financial Institution Simulation)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  
-  MITM attack emulation with detection and mitigation strategies.  
-
+  MITM attack emulation with detection and mitigation strategies.
+- [**Password Cracking Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
+ Hashcat/John the Ripper against a small hash set (e.g., MD5 or NTLM). Expressed cracking speed and mitigation (stronger hashing, salting).
 ---
 
 ### 📡 IoT / Embedded & Cyber-Physical Security
