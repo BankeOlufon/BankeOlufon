@@ -3,10 +3,10 @@
 
 ---
 
-#### My portfolio showcases 19 hands‑on security projects spanning cloud defense, offensive tradecraft, IoT/embedded systems, AI red teaming, and creative coding. Each project is designed to demonstrate practical skills across the cybersecurity lifecycle - from building hardened cloud infrastructure and authoring custom detections, to emulating adversarial attacks and reverse engineering firmware. 
+#### My portfolio showcases 20 hands‑on security projects spanning cloud defense, offensive tradecraft, IoT/embedded systems, AI red teaming, and creative coding. Each project is designed to demonstrate practical skills across the cybersecurity lifecycle - from building hardened cloud infrastructure and authoring custom detections, to emulating adversarial attacks and reverse engineering firmware. 
 #### The projects below highlight expertise in enterprise defense (Azure, AWS, Sentinel, XDR), red teaming and exploitation (OSCP‑style labs, AD pivots, SaaS pentesting), cyber‑physical security (IoT devices, RFID access control, firmware analysis), and emerging domains (AI agent abuse with PyRIT).
 
-### [*Read my security articles here!*](https://medium.com/@banke.olufon)
+### [*Read my security-focused articles here!*](https://medium.com/@banke.olufon)
 
 ## 📂 Projects
 
