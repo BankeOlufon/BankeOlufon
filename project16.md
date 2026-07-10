@@ -51,6 +51,9 @@ This project demonstrates practical skills in JavaScript-based creative coding, 
 
 <img width="676" height="363" alt="image" src="https://github.com/user-attachments/assets/bb3cb14b-c2a5-44b4-ba5c-d7dda11f487e" />
 
+<img width="749" height="424" alt="image" src="https://github.com/user-attachments/assets/cb1104af-d9f1-4153-b51a-3ca694edef48" />
+
+
 <img width="680" height="372" alt="image" src="https://github.com/user-attachments/assets/1029f8fe-7e53-4d87-b49b-509c997a5ab3" />
 
 <img width="673" height="363" alt="image" src="https://github.com/user-attachments/assets/f16c6a87-4cd7-4665-b7a5-94eaaddf5b24" />
