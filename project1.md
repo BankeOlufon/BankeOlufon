@@ -1,7 +1,7 @@
 # 🏢 Enterprise Cloud Infrastructure & Identity Lifecycle Engineering
 
 ## 📌 Project Overview
-This project details the end-to-end design, deployment, and hardening of an enterprise-grade Azure tenant and identity perimeter. Moving away from vulnerable default cloud configurations, this infrastructure enforces strict least-privilege administrative boundaries, group-based identity lifecycles, single sign-on (SSO) integrations, and defensive network isolation—providing a secure corporate foundation before hosting organizational data.
+This project details the end-to-end design, deployment, and hardening of an enterprise-grade Azure tenant and identity perimeter. Moving away from vulnerable default cloud configurations, this infrastructure enforces strict least-privilege administrative boundaries, group-based identity lifecycles, single sign-on (SSO) integrations, and defensive network isolation, - providing a secure corporate foundation before hosting organizational data.
 
 ---
 
