@@ -1,57 +1,59 @@
 # 🤖 Agentic AI Abuse, Privilege Escalation & Sentinel SIEM Detection Lab (PyRIT)
 
 ## 📌 Project Overview
-This project simulates an end-to-end attack lifecycle where an external threat actor targets an enterprise AI storefront assistant to exploit **Excessive Agency (OWASP LLM02)** and **Sensitive Information Disclosure (OWASP LLM06)** vulnerabilities. 
+This lab demonstrates how an external attacker could manipulate an enterprise AI assistant to abuse backend privileges, and how defenders can detect and stop those attacks in real time.  
 
-Using **Microsoft PyRIT (Python Risk Identification Tool)**, I built an attack script to model a blind external attacker who lacks access to backend source code. The attack workflow automatically conducts reconnaissance to find available tools via chat prompts and then executes a multi-turn social engineering strategy to extract backend cloud database records.
+Using **Microsoft PyRIT (Python Risk Identification Tool)**, I scripted a blind attack scenario where the attacker only interacts through chat prompts. The workflow automatically probes the assistant for hidden tools, then runs a multi‑turn social engineering strategy to extract sensitive cloud database records.  
 
-To defend against this, the application's runtime events were piped into an **Azure Log Analytics Workspace**. I then wrote custom **Kusto Query Language (KQL)** rules inside **Microsoft Sentinel** to detect unauthenticated tool execution and prompt injection attempts in real time.
+On the defense side, I configured runtime event logging into **Azure Log Analytics Workspace** and wrote custom **Kusto Query Language (KQL)** rules in **Microsoft Sentinel** to detect unauthorized tool execution and prompt injection attempts.
 
 ---
 
 ## 🎯 Technical Scope
-- **Blind Attacker Simulation:** Modeling an external threat actor probing a chat interface for hidden functions.
-- **Excessive Agency Exploitation:** Bypassing soft system prompts to force an LLM to call high-privilege backend APIs.
-- **Automated Multi-Turn Prompt Injection:** Orchestrating iterative conversational attacks using PyRIT.
-- **Cloud Telemetry Logging:** Shipping application event runtime states to Azure Monitor.
-- **SIEM Detection Engineering:** Writing production-ready Sentinel rules to alert on security events within an AI runtime.
-- **MITRE ATLAS Mapping:** Mapping AI exploitation phases directly to a structured matrix.
+- **Blind Attacker Simulation:** Modeling an external actor probing a chat interface for hidden functions.  
+- **Excessive Agency Exploitation:** Forcing the AI to call backend APIs with elevated privileges.  
+- **Multi‑Turn Prompt Injection:** Running iterative conversational attacks using PyRIT.  
+- **Cloud Telemetry Logging:** Forwarding runtime events to Azure Monitor.  
+- **SIEM Detection Engineering:** Writing Sentinel rules to alert on suspicious activity.  
+- **MITRE ATLAS Mapping:** Aligning attack phases with a structured adversary matrix.  
 
 ---
 
 ## 🛠️ Implementation Breakdown
 
-### 1. The Vulnerable Target Architecture (Python & Azure OpenAI)
-I rapidly prototyped a Python application integrated with **Azure OpenAI (GPT-4o/GPT-5 mini)** to serve as a corporate AI assistant. 
-* **Backend Functions:** The application utilizes the `azure-data-tables` SDK to expose two functions to the LLM: `query_public_stock()` (for open inventory) and `query_internal_margins()` (for sensitive business records and supplier PII).
-* **The Security Flaw:** The Python backend relies on local OS tokens (`DefaultAzureCredential`) to communicate with Azure Storage, giving the app server permission to read both tables. However, the code contains **no user-role validation** before executing the database functions. It relies entirely on the LLM's system prompt to enforce data permissions.
+### 1. Target Setup (Prototype Backend + Azure OpenAI)
+I **vibe‑coded a lightweight prototype backend** using Gemini to connect Azure OpenAI (GPT‑4o/GPT‑5 mini) with Azure Data Tables. This was a quick demo scaffold, not a production chatbot.  
+* **Backend Functions:** Two functions were exposed — `query_public_stock()` (open inventory) and `query_internal_margins()` (sensitive supplier records).  
+* **Security Flaw:** The backend relied on default cloud credentials with no role validation, meaning the AI assistant could access both tables if manipulated.  
 
-### 2. The External Attacker Pipeline (PyRIT)
-Because an external attacker cannot view the underlying Python variables, I configured a PyRIT script to execute a realistic, blind attack chain in two stages:
-* **Stage 1 (Reconnaissance):** The script prompts the AI assistant to list its available features, plugins, and backend capabilities, mapping out exposed functions.
-* **Stage 2 (Exploitation):** Once the tool names are discovered, the script initiates a multi-turn conversation strategy. It uses behavioral manipulation to bypass the LLM's system instructions, forcing the backend to fetch confidential supplier rows without administrative authorization.
+### 2. External Attacker Pipeline (PyRIT)
+I built a PyRIT script to simulate a realistic blind attack chain:  
+* **Stage 1 (Reconnaissance):** Prompting the assistant to reveal available features and backend functions.  
+* **Stage 2 (Exploitation):** Using behavioral manipulation to bypass system instructions and force execution of sensitive queries.  
 
-### 3. Detection & SIEM Integration (Azure Log Analytics & Microsoft Sentinel)
-To monitor and catch these injections, I configured the application's runtime engine to generate structured JSON event logs every time a backend tool is triggered.
-* **Log Aggregation:** Telemetry is forwarded directly into an Azure Log Analytics Workspace.
-* **Sentinel Analytics:** I deployed custom KQL rules inside Microsoft Sentinel. These rules match incoming chat actions against user authentication tables, alerting defenders the moment a public session successfully triggers a sensitive, internal data function.
+### 3. Detection & SIEM Integration (Azure Sentinel)
+I focused on the defense side by engineering detection rules:  
+* **Log Aggregation:** Runtime events were shipped into Azure Log Analytics.  
+* **Sentinel Analytics:** Custom KQL rules flagged when unauthenticated sessions triggered sensitive backend functions.  
 
 ---
 
 ## 🔐 Practical Security Insights
-
-* **The Fallacy of Prompt-Based Security:** This lab demonstrates that system prompts are not a valid security boundary for data authorization. If an app server has access to a database via cloud identity tokens, an attacker who manipulates the LLM effectively inherits the server's backend privileges.
-* **Mitigation Strategy:** Security must be enforced in the backend code. The Python application must parse the user's JSON Web Token (JWT) or session role before passing execution variables to the `azure-data-tables` SDK, ensuring the request is dropped regardless of what the LLM instructs the app to do.
-* **MITRE ATLAS Mapping:**
-  * **AML.T0015 (Reconnaissance):** Probing the LLM to map out underlying tool schemas.
-  * **AML.T0051 (LLM Input Injection):** Executing multi-turn adversarial prompt injections.
-  * **AML.T0055 (Excessive Agency):** Forcing backend scripts to run high-privilege queries using application identities.
+- **Prompt‑based security is unreliable:** If the server itself has backend access, attackers can inherit those privileges by manipulating the AI.  
+- **Mitigation must be in code:** Backend logic should enforce user roles and tokens before executing database queries.  
+- **MITRE ATLAS Mapping:**  
+  * **AML.T0015 (Reconnaissance):** Probing the LLM for tool schemas.  
+  * **AML.T0051 (LLM Input Injection):** Multi‑turn adversarial prompt injections.  
+  * **AML.T0055 (Excessive Agency):** Triggering high‑privilege queries via application identities.  
 
 ---
 
 ## 📚 Technical Skills Demonstrated
+- **AI Security Testing:** Running automated adversarial attacks with PyRIT.  
+- **Defensive Engineering:** Exporting runtime states to cloud logging.  
+- **SIEM Rule Writing:** Building KQL detections in Sentinel.  
+- **Vulnerability Analysis:** Identifying flaws where access control was missing from backend code.  
 
-* **AI Security Testing:** Orchestrating automated multi-turn adversarial attacks using Microsoft PyRIT.
-* **Defensive Engineering:** Exporting application runtime states to cloud logging environments.
-* **SIEM Rule Engineering:** Writing functional KQL detection scripts to isolate prompt injection exploits within Microsoft Sentinel.
-* **Vulnerability Analysis:** Auditing structural code flaws where data access controls are decoupled from user sessions.
+---
+
+⚠️ **Note on scope:** I did not build chatbot logic or engineer a full backend system. The prototype was vibe‑coded with Gemini purely to connect Azure OpenAI with Azure Data Tables. My hands‑on work was in **attack simulation and defense engineering**.
