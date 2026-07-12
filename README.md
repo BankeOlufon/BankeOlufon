@@ -21,15 +21,17 @@
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
 - [**Multi-Cloud Security Posture (AWS + Azure + Prowler)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
   Unified dashboard for toxic combination detection across AWS and Azure.
-- [**Container Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project18.md)  
- Docker container with DVWA), ran Trivy, explored misconfigurations, and patched them. 
 - [**Sentinel Playbook**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project19.md)  
 KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, suspicious PowerShell).
 
 ---
  🛜 Network Security
 - [**Azure Infrastructure & Network Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md)
+
   Simulated misconfigurations such as public VM exposure, lateral movement from compromised VMs, and private endpoint bypasses
+
+- [**ARP Spoofing on a Wireless Network**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  
+  MITM attack emulation with detection and mitigation strategies.
 
 ---
 
@@ -40,10 +42,6 @@ KQL hunting queries in Sentinel (e.g., anomalous sign‑ins, impossible travel, 
   Misconfigurations leveraged to escalate from user to SYSTEM.  
 - [**Active Directory Domain Pivot Lab (Network Conquest)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project8.md)  
   Credential theft and lateral movement to compromise domain controllers.  
-- [**SaaS Security & Identity Pentesting (Okta Federation, SCIM, OAuth)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project9.md)  
-  Identity exploitation in SaaS ecosystems using adversarial simulations.  
-- [**ARP Spoofing on a Wireless Network (Financial Institution Simulation)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  
-  MITM attack emulation with detection and mitigation strategies.
 - [**Password Cracking Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
  Hashcat/John the Ripper against a small hash set (e.g., MD5 or NTLM). Expressed cracking speed and mitigation (stronger hashing, salting).
 ---
