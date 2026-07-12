@@ -38,9 +38,20 @@ I focused on the defense side by engineering detection rules:
 
 ---
 
+## 🛡️ Mitigation Strategy
+
+This vulnerability is classified as **Excessive Agency (OWASP LLM02)**. To secure the architecture, the following three controls must be implemented:
+
+*   **User-Level Session Validation:** Never rely on the LLM's system prompt to restrict data access. The Python backend must extract the user's login token from the incoming web request and verify their specific role before executing any internal database function (such as `query_internal_margins`).
+*   **Restricted Cloud Privileges:** The application's cloud identity (Managed Identity or Service Principal) must never hold global subscription rights like `Owner` or `Contributor`. In the Azure Portal, assign explicit, low-privilege RBAC roles (like `Storage Table Data Reader`) limited strictly to the required tables.
+*   **API Endpoint Separation:** Split the chatbot into separate web tracks within your Python application code rather than giving one interface access to every tool. The public chatbot track (`/api/public-chat`) should only be compiled with the public tool schema, meaning the code for the internal margins tool is completely absent. The internal tool code should sit on a completely separate code endpoint (`/api/manager-chat`) that is locked behind a standard login screen.
+
+ ---
+
 ## 🔐 Practical Security Insights
 - **Prompt‑based security is unreliable:** If the server itself has backend access, attackers can inherit those privileges by manipulating the AI.  
-- **Mitigation must be in code:** Backend logic should enforce user roles and tokens before executing database queries.  
+- **Mitigation must be in code:** Backend logic should enforce user roles and tokens before executing database queries.
+ 
 - **MITRE ATLAS Mapping:**  
   * **AML.T0015 (Reconnaissance):** Probing the LLM for tool schemas.  
   * **AML.T0051 (LLM Input Injection):** Multi‑turn adversarial prompt injections.  
