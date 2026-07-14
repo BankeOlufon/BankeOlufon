@@ -34,5 +34,11 @@ This project highlights **AI red teaming** combined with **cloud security best p
 It demonstrates the ability to:  
 - Attack LLMs with Garak.  
 - Securely manage secrets in Azure.  
-- Log and analyze adversarial results in a structured way.  
+- Log and analyze adversarial results in a structured way.
+
+
+<img width="853" height="296" alt="image" src="https://github.com/user-attachments/assets/097dc8d5-637c-4f6a-9a87-ed716d945d98" />
+<img width="689" height="211" alt="image" src="https://github.com/user-attachments/assets/e150e2ca-b179-41d4-bdcd-b1fbb23d4807" />
+
+
 
