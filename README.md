@@ -57,7 +57,7 @@
 ---
 
 ### 🤖 AI Security & Red Teaming
-- [**Agentic AI Abuse, Privilege Escalation & Sentinel SIEM Detection Lab (PyRIT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
+- [**Agentic AI Abuse (Garak)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
   Automated red teaming of AI agents, testing excessive agency and prompt injection.  
 
 ---
