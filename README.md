@@ -19,7 +19,7 @@
   Offensive simulations to validate defensive visibility and response thresholds.  
 - [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project4.md)  
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
-- [**Multi-Cloud Security Posture (AWS + Azure + Prowler)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
+- [**Multi-Cloud Security Posture (AWS + Azure + Datadog)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
   Unified dashboard for toxic combination detection across AWS and Azure.
 
 ---
