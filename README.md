@@ -56,9 +56,12 @@
 
 ---
 
-### 🤖 AI Security & Red Teaming
+### 🤖 AI Security & Blue + Red Teaming
 - [**Agentic AI Abuse: Black-Box LLM Pentesting using Garak, Azure OpenAI & FastAPI**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
-  Automated red teaming of AI agents, testing excessive agency and prompt injection.  
+  Automated red teaming of AI agents, testing excessive agency and prompt injection.
+
+- [**L7-Aegis: Layer 7 AI Threat Detection for LLM Applications (IDS)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
+  An AI-powered Layer 7 intrusion detection system (IDS) designed to detect adversarial prompt activity targeting LLM applications. The system combines network metadata captured by Scapy, using an Isolation Forest machine learning model to identify anomalous requests.
 
 ---
 
