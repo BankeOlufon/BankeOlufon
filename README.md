@@ -57,7 +57,7 @@
 ---
 
 ### 🤖 AI Security & Red Teaming
-- [**Agentic AI Abuse (Garak)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
+- [**Agentic AI Abuse: Black-Box LLM Pentesting using Garak, Azure OpenAI & FastAPI**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
   Automated red teaming of AI agents, testing excessive agency and prompt injection.  
 
 ---
