@@ -63,8 +63,8 @@
 - [**L7-Aegis: Layer 7 AI Threat Detection for LLM Applications (IDS)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
   An AI-powered Layer 7 intrusion detection system (IDS) designed to detect adversarial prompt activity targeting LLM applications. The system combines network metadata captured by Scapy, using an Isolation Forest machine learning model to identify anomalous requests.
 
-- [**AegisIR: AI Agent Incident Response Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
-  An AI-powered Layer 7 intrusion detection system (IDS) designed to detect adversarial prompt activity targeting LLM applications. The system combines network metadata captured by Scapy, using an Isolation Forest machine learning model to identify anomalous requests.
+- [**AegisIR: AI Agent Incident Response Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project18.md)  
+  AegisIR is an AI Agent Incident Response Lab that simulates prompt injection attacks against a deliberately vulnerable LLM application. Using Garak, Ollama, PostgreSQL and Wazuh, the project demonstrates how AI-driven security incidents can be detected, and remediated through log analysis, custom detection rules and incident response workflows.
 
 ---
 
