@@ -1,0 +1,214 @@
+Architecture:
+
+                           ATTACK / TESTING SIDE
+
+┌─────────────────────────────────────────────────────────────┐
+│ Garak                                                       │
+│                                                             │
+│ Generates prompt-injection, jailbreak, encoded and fuzzing  │
+│ requests to test the chatbot.                               │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               │ HTTPS POST /chat
+                               ▼
+
+
+                           NETWORK ENTRY POINT
+
+┌─────────────────────────────────────────────────────────────┐
+│ Network Interface                                           │
+│                                                             │
+│ Carries the encrypted HTTPS traffic toward the application. │
+└───────────────────────┬───────────────────┬─────────────────┘
+                        │                   │
+                        │ Packet copy       │ Actual traffic
+                        ▼                   ▼
+
+┌───────────────────────────────┐    ┌──────────────────────────────┐
+│ Scapy                         │    │ TLS Termination Point        │
+│                               │    │                              │
+│ Watches network metadata:     │    │ Reverse proxy, load balancer│
+│                               │    │ or application server.       │
+│ • Source IP                   │    │                              │
+│ • Destination IP              │    │ Decrypts HTTPS using the     │
+│ • Packet size                 │    │ server certificate and key.  │
+│ • Request frequency           │    └──────────────┬───────────────┘
+│ • Connection timing           │                   │
+│ • TCP behaviour               │                   │ Decrypted HTTP
+│                               │                   ▼
+│ It does NOT read the encrypted│
+│ prompt itself.                │    ┌──────────────────────────────┐
+└──────────────┬────────────────┘    │ FastAPI /chat Endpoint       │
+               │                     │                              │
+               │ Network features    │ Receives the actual prompt   │
+               │                     │ after TLS is decrypted.      │
+               │                     └──────────────┬───────────────┘
+               │                                    │
+               │                                    │ Prompt text
+               └────────────────────┬───────────────┘
+                                    ▼
+
+
+                         L7-AEGIS DETECTION ENGINE
+
+┌─────────────────────────────────────────────────────────────┐
+│ Feature Collection                                          │
+│                                                             │
+│ Combines two kinds of information:                          │
+│                                                             │
+│ Network information from Scapy                              │
+│ • Source IP                                                 │
+│ • Request rate                                              │
+│ • Packet sizes                                              │
+│ • Timing patterns                                           │
+│                                                             │
+│ Prompt information from FastAPI                             │
+│ • Prompt length                                             │
+│ • Word count                                                │
+│ • Special-character ratio                                  │
+│ • Shannon entropy                                           │
+│ • Base64 indicators                                         │
+│ • Unicode or encoding indicators                            │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+┌─────────────────────────────────────────────────────────────┐
+│ Pandas                                                      │
+│                                                             │
+│ Organises all the collected features into rows and columns. │
+│                                                             │
+│ Example row:                                                │
+│ IP | prompt length | entropy | request rate | Base64 | etc. │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+┌─────────────────────────────────────────────────────────────┐
+│ NumPy                                                       │
+│                                                             │
+│ Handles the numerical calculations and arrays used by       │
+│ Pandas and the machine-learning model.                      │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+┌─────────────────────────────────────────────────────────────┐
+│ Scikit-learn                                                │
+│                                                             │
+│ Machine-learning library that provides the Isolation Forest │
+│ algorithm.                                                  │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+┌─────────────────────────────────────────────────────────────┐
+│ Isolation Forest                                            │
+│                                                             │
+│ Compares the request with normal traffic and produces an    │
+│ anomaly score.                                              │
+│                                                             │
+│ Question answered:                                          │
+│ “Does this request look unusually different?”               │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+                    ┌───────────────────────┐
+                    │ Detection Decision    │
+                    └───────────┬───────────┘
+                                │
+                  ┌─────────────┴─────────────┐
+                  │                           │
+                  ▼                           ▼
+
+        ┌───────────────────┐       ┌────────────────────────┐
+        │ Normal Request    │       │ Suspicious Request     │
+        │                   │       │                        │
+        │ Continue to AI    │       │ Create security event  │
+        └─────────┬─────────┘       └────────────┬───────────┘
+                  │                              │
+                  │                              ▼
+                  │                  ┌────────────────────────┐
+                  │                  │ Azure Monitor /        │
+                  │                  │ Log Analytics          │
+                  │                  │                        │
+                  │                  │ Stores structured logs:│
+                  │                  │                        │
+                  │                  │ • Source IP            │
+                  │                  │ • Anomaly score        │
+                  │                  │ • Prompt features      │
+                  │                  │ • Timestamp            │
+                  │                  │ • Detection reason     │
+                  │                  └────────────┬───────────┘
+                  │                              ▼
+                  │                  ┌────────────────────────┐
+                  │                  │ Microsoft Sentinel     │
+                  │                  │                        │
+                  │                  │ SOC monitoring:        │
+                  │                  │                        │
+                  │                  │ • Alerts               │
+                  │                  │ • Incidents            │
+                  │                  │ • KQL investigations   │
+                  │                  │ • Dashboards           │
+                  │                  │ • Attack trends        │
+                  │                  └────────────────────────┘
+                  │
+                  ▼
+
+
+                           AI APPLICATION SIDE
+
+┌─────────────────────────────────────────────────────────────┐
+│ Azure OpenAI Agent                                          │
+│                                                             │
+│ Processes prompts that reach the chatbot and decides        │
+│ whether it should answer directly or call a backend tool.   │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+┌─────────────────────────────────────────────────────────────┐
+│ Agent Tools                                                 │
+│                                                             │
+│ Python functions used by the AI agent to retrieve or change │
+│ business data.                                              │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+
+             ┌─────────────────┴──────────────────┐
+             │                                    │
+             ▼                                    ▼
+
+┌────────────────────────────┐      ┌────────────────────────────┐
+│ SaakePublicInventory       │      │ SaakeInternalWholesales    │
+│ Azure Table                │      │ Azure Table                │
+│                            │      │                            │
+│ Public information:        │      │ Restricted information:    │
+│                            │      │                            │
+│ • Product names            │      │ • Supplier details         │
+│ • Retail prices            │      │ • Wholesale prices         │
+│ • Stock quantities         │      │ • Internal costs           │
+└────────────────────────────┘      └────────────────────────────┘
+
+Sudo flow:
+
+1. Garak sends an HTTPS attack request.
+
+2. Scapy watches the network traffic but cannot read the encrypted prompt.
+
+3. TLS is terminated by the server-side TLS component.
+
+4. FastAPI receives the decrypted prompt.
+
+5. Scapy's network data and FastAPI's prompt data are combined.
+
+6. Pandas organises the information.
+
+7. NumPy handles the numerical calculations.
+
+8. Scikit-learn supplies the Isolation Forest model.
+
+9. Isolation Forest decides whether the request looks abnormal.
+
+10. Suspicious activity is logged to Azure Monitor / Log Analytics.
+
+11. Microsoft Sentinel creates alerts and gives the SOC a place to investigate.
+
+12. The request may continue to the Azure OpenAI agent.
+
+13. The agent may use tools to query the Azure Tables.
