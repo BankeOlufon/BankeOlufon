@@ -1,4 +1,8 @@
+**L7-Aegis** is an AI-powered Layer 7 intrusion detection system (IDS) designed to detect adversarial prompt activity targeting LLM applications. The system combines network metadata captured by Scapy with application-layer prompt analysis, using feature engineering and an Isolation Forest machine learning model to identify anomalous requests such as prompt injection, jailbreak attempts, encoded payloads, and automated LLM fuzzing. Suspicious activity is logged to Azure Monitor and surfaced in Microsoft Sentinel for security monitoring and incident investigation, demonstrating a cloud-native approach to AI threat detection and SOC integration.
+
 Architecture:
+
+```
 
                            ATTACK / TESTING SIDE
 
@@ -184,6 +188,8 @@ Architecture:
 │ • Retail prices            │      │ • Wholesale prices         │
 │ • Stock quantities         │      │ • Internal costs           │
 └────────────────────────────┘      └────────────────────────────┘
+
+```
 
 Sudo flow:
 
