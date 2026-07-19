@@ -1,4 +1,4 @@
-# 🌐 Multi-Cloud Security Posture Management (AWS + Azure + Prowler)
+# 🌐 Multi-Cloud Security Posture Management (AWS + Azure + Prowler / Data Dog)
 
 ## 📌 Project Overview
 This project details the architectural deployment and evaluation of a Multi-Cloud Security Posture Management (CSPM) evaluation across heterogeneous cloud ecosystems. Using **Prowler Open Source**, this lab establishes a centralized, command-line-driven compliance auditing framework across concurrent AWS and Azure infrastructure deployments. 
