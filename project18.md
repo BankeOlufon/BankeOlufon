@@ -1,4 +1,4 @@
-AEGIS IR
+```
                          ATTACK GENERATION
 
 ┌────────────────────────────────────────────────────────────┐
@@ -82,3 +82,5 @@ AEGIS IR
        │ • Disable tool        │
        │ • Preserve evidence   │
        └───────────────────────┘
+
+```
