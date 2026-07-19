@@ -39,9 +39,8 @@
 - [**Windows Privilege Escalation Lab (Local Takeover)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project7.md)  
   Misconfigurations leveraged to escalate from user to SYSTEM.  
 - [**Active Directory Domain Pivot Lab (Network Conquest)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project8.md)  
-  Credential theft and lateral movement to compromise domain controllers.  
-- [**Password Cracking Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
- Hashcat/John the Ripper against a small hash set (e.g., MD5 or NTLM). Expressed cracking speed and mitigation (stronger hashing, salting).
+  Credential theft and lateral movement to compromise domain controllers.
+  
 ---
 
 ### 📡 IoT / Embedded & Cyber-Physical Security
