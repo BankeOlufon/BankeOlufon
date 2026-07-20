@@ -60,19 +60,8 @@ This project simulates adversarial tradecraft targeting NSG rules, public VM exp
 
 ---
 
-<!-- ## 📷 Portfolio Artifacts
-[Placeholder: NSG rule configuration screenshot]  
-[Placeholder: VM exposure test evidence]  
-[Placeholder: Sentinel log ingestion output]  
--->
+<img width="847" height="152" alt="image" src="https://github.com/user-attachments/assets/0e2b9ec1-576c-4f05-822f-77d7e6b608b4" />
 
----
-
-<!-- ## 📈 Why This Matters to Employers
-Demonstrates ability to secure Azure infrastructure, simulate adversarial tactics, and integrate network telemetry into SIEM monitoring.
--->
-
----
 
 ## 🔗 Related Projects
 - [Enterprise Cloud Infrastructure & Identity Lifecycle Engineering](#)  
