@@ -56,12 +56,24 @@ This project simulates adversarial tradecraft targeting NSG rules, public VM exp
 - VM deployment, Bastion/JIT access, and exposure analysis  
 - Endpoint security (service vs. private endpoints)  
 - Infrastructure logging and Sentinel integration  
-- Microsoft Defender for Cloud monitoring  
+- Microsoft Defender for Cloud monitoring
+
+Windows Event Logs ─┐
+                    │
+Linux Syslog ───────┤
+                    ▼
+        Azure Monitor Agent (AMA)
+                    ▼
+      Log Analytics Workspace
+                    ▼
+      Microsoft Sentinel
 
 ---
 
 <img width="847" height="152" alt="image" src="https://github.com/user-attachments/assets/0e2b9ec1-576c-4f05-822f-77d7e6b608b4" />
 <img width="899" height="77" alt="image" src="https://github.com/user-attachments/assets/b037879e-00d5-400e-8914-cf867d177b3e" />
+<img width="875" height="234" alt="image" src="https://github.com/user-attachments/assets/c7e3c2a5-e395-4a4a-867f-d0a9bfc4eb4c" />
+
 
 
 
