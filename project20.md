@@ -70,9 +70,6 @@ Linux Syslog ───────┤
 
 ---
 
-<img width="847" height="152" alt="image" src="https://github.com/user-attachments/assets/0e2b9ec1-576c-4f05-822f-77d7e6b608b4" />
-<img width="899" height="77" alt="image" src="https://github.com/user-attachments/assets/b037879e-00d5-400e-8914-cf867d177b3e" />
-<img width="875" height="234" alt="image" src="https://github.com/user-attachments/assets/c7e3c2a5-e395-4a4a-867f-d0a9bfc4eb4c" />
 <img width="623" height="116" alt="image" src="https://github.com/user-attachments/assets/02c86492-f245-401c-81d8-1cda31391eb8" />
 <img width="613" height="230" alt="image" src="https://github.com/user-attachments/assets/3cbdd012-1f25-4cda-9aa6-154f3c3d61d9" />
 <img width="596" height="254" alt="image" src="https://github.com/user-attachments/assets/050dc4f8-ee90-4ef5-9da8-5b896e84e5a8" />
@@ -86,6 +83,9 @@ Linux Syslog ───────┤
 <img width="643" height="171" alt="image" src="https://github.com/user-attachments/assets/3c66080d-a6a0-40b1-8720-4babd554ba47" />
 <img width="902" height="116" alt="image" src="https://github.com/user-attachments/assets/e00e4e0b-f154-4523-aa5e-c0ea1b64f075" />
 <img width="646" height="192" alt="image" src="https://github.com/user-attachments/assets/dd865d8b-1054-4f91-ad07-015be4628b93" />
+<img width="771" height="34" alt="image" src="https://github.com/user-attachments/assets/5b44347d-8b8c-4830-9a7c-7325b1eab543" />
+<img width="356" height="559" alt="image" src="https://github.com/user-attachments/assets/4f866fe6-888d-43e4-af79-1e37848fdfc7" />
+<img width="887" height="470" alt="image" src="https://github.com/user-attachments/assets/6eb951e6-2d92-4ee0-ba7e-3ab5c689bb19" />
 
 
 
