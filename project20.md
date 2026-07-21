@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-Designed and secured an enterprise-style Azure infrastructure, focusing on secure network architecture, workload isolation, virtual machine deployment, and infrastructure hardening. This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to establish a resilient cloud infrastructure aligned with enterprise security best practices.
+Designed and secured an enterprise-style Azure infrastructure, focusing on secure network architecture, workload isolation, and virtual machine deployment. This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to establish a resilient cloud infrastructure aligned with enterprise security best practices.
 
 ---
 
@@ -83,10 +83,8 @@ Designed and secured an enterprise-style Azure infrastructure, focusing on secur
 - Azure Bastion
 - Just-In-Time (JIT) VM Access
 - Private Endpoints
-- Service Endpoints
 - Azure DNS
 - Network Segmentation
-- Cloud Infrastructure Hardening
 - Azure Network Architecture
 - Infrastructure Security Validation
 ---
