@@ -10,6 +10,15 @@
 
 ## 📂 Projects
 
+```| Portfolio Project                                                       | Required Roadmap Phases      |
+| ----------------------------------------------------------------------- | ---------------------------- |
+| **1. Azure Infrastructure & Network Security Lab**                      | **Phases 5, 6, 7, 8, 9**     |
+| **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
+| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 5, 6, 8, 9**     |
+| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 5, 6, 7, 8, 9, 10** |
+| **5. Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**  | **Phases 4, 12**             |
+```
+
 ### 🌐 Cloud Security & Enterprise Defense
 - [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)  
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
