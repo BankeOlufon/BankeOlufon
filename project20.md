@@ -21,7 +21,12 @@ Designed and secured an enterprise-style Azure infrastructure, focusing on netwo
 
 ## 🛠️ Technical Tasks & Functions Performed
 
-### Virtual Network & Subnet Architecture
+### Architecture
+
+<img width="498" height="257" alt="image" src="https://github.com/user-attachments/assets/228e238a-cdab-45c2-88a4-ee111f451d88" />
+
+
+### Virtual Network & Subnets
 
 - Designed Azure Virtual Networks with segmented address spaces and dedicated subnets.
 - Configured public and private IP addressing to evaluate infrastructure exposure.
