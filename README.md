@@ -12,10 +12,10 @@
 
 ```| Portfolio Project                                                       | Required Roadmap Phases      |
 | ----------------------------------------------------------------------- | ---------------------------- |
-| **1. Azure Infrastructure & Network Security Lab**                      | **Phases 5, 6, 7, 8, 9**     |
+| **1. Azure Infrastructure & Network Security Lab**                      | **Phases 5, 6, 7, 8 **     |
 | **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
-| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 5, 6, 8, 9**     |
-| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 5, 6, 7, 8, 9, 10** |
+| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 5, 6, 7**     |
+| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 6,7,8** |
 | **5. Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**  | **Phases 4, 12**             |
 ```
 
