@@ -12,7 +12,7 @@
 
 ```| Portfolio Project                                                       | Required Roadmap Phases      |
 | ----------------------------------------------------------------------- | ---------------------------- |
-| **1. Azure Infrastructure Security & Network Attack Simulation**        | **Phases 5, 6, 7, 8 **     |
+| **1. Azure Network Architecture & Infrastructure Hardening**        | **Phases 5, 6, 7, 8 **     |
 | **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
 | **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 6, 7**     |
 | **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 4, 6, 8** |
@@ -33,7 +33,7 @@
 
 ---
  🛜 Network Security
-- [**Azure Infrastructure Security & Network Attack Simulation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md)
+- [**Azure Network Architecture & Infrastructure Hardening**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md) ✅
 
   This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to       establish a resilient cloud infrastructure
 
@@ -85,7 +85,7 @@
 ## 🛠️ Tools / Scripting / Programming
 Top  tools and skills relevant to my focus areas:
 
-- **Offensive Security: Wireshark** , **Burp Suite** , **Kali Linux**, **PyRIT**, **Ghidra**
+- **Offensive Security: Wireshark** , **Burp Suite** , **Kali Linux**, **Garak**, **Ghidra**
 - **Cloud Security: Microsoft Sentinel**, **Terraform**, **Azure Defender / Security Center** , **Okta / Identity Governance**, **Microsoft Graph**, **KQL**
 - **Programming/Scripting/Query: Python, JS, KQL**
 
