@@ -12,10 +12,10 @@
 
 ```| Portfolio Project                                                       | Required Roadmap Phases      |
 | ----------------------------------------------------------------------- | ---------------------------- |
-| **1. Azure Infrastructure & Network Security Lab**                      | **Phases 5, 6, 7, 8 **     |
+| **1. Azure Infrastructure Security & Network Attack Simulation**        | **Phases 5, 6, 7, 8 **     |
 | **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
-| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 5, 6, 7**     |
-| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 6,7,8** |
+| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 6, 7**     |
+| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 4, 6, 8** |
 | **5. Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**  | **Phases 4, 12**             |
 ```
 
@@ -24,7 +24,7 @@
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
 - [**Threat Detection Engineering & Distributed SIEM Operations**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
   Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
-- [**Assumed-Breach Emulation & Security Controls Validation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project3.md)  
+- [**Cloud Identity Attack Emulation & Security Controls Validation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project3.md)  
   Offensive simulations to validate defensive visibility and response thresholds.  
 - [**Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project4.md)  
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
@@ -33,7 +33,7 @@
 
 ---
  🛜 Network Security
-- [**Azure Infrastructure & Network Security Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md)
+- [**Azure Infrastructure Security & Network Attack Simulation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md)
 
   Simulated misconfigurations such as public VM exposure, lateral movement from compromised VMs, and private endpoint bypasses
 
