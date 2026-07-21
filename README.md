@@ -12,7 +12,7 @@
 
 ```| Portfolio Project                                                       | Required Roadmap Phases      |
 | ----------------------------------------------------------------------- | ---------------------------- |
-| **1. Azure Network Architecture & Infrastructure Hardening**        | **Phases 5, 6, 7, 8 **     |
+| **1. Azure Network Architecture & Security**                            | **Phases 5, 6, 7, 8 **     |
 | **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
 | **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 6, 7**     |
 | **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 4, 6, 8** |
@@ -33,7 +33,7 @@
 
 ---
  🛜 Network Security
-- [**Azure Network Architecture & Infrastructure Hardening**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md) ✅
+- [**Azure Network Architecture & Security**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md) ✅
 
   This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to       establish a resilient cloud infrastructure
 
