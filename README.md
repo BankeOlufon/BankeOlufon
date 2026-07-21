@@ -20,7 +20,7 @@
 ```
 
 ### 🌐 Cloud Security & Enterprise Defense
-- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)  
+- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)  ✅ 
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
 - [**Threat Detection Engineering & Distributed SIEM Operations**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
   Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
@@ -37,7 +37,7 @@
 
   Simulated misconfigurations such as public VM exposure, lateral movement from compromised VMs, and private endpoint bypasses
 
-- [**ARP Spoofing on a Wireless Network**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  
+- [**ARP Spoofing on a Wireless Network**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  ✅ 
   MITM attack emulation with detection and mitigation strategies.
 
 ---
@@ -55,17 +55,17 @@
 ### 📡 IoT / Embedded & Cyber-Physical Security
 - [**Bratz Cyberdeck Camera: Hardened IoT Media Deck (ESP32-S3)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project11.md)  
   Secure cyberdeck camera with encryption, BLE privacy, and anti‑tamper routines.  
-- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)  
+- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)   
   Sensor fusion for visually impaired navigation with cyber‑physical threat modeling.  
 - [**IoT Firmware Reverse Engineering & Vulnerability Research Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project13.md)  
   Binwalk, Ghidra, and QEMU analysis of IoT firmware binaries.  
-- [**Arduino Secure RFID Door Lock System**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project14.md)  
+- [**Arduino Secure RFID Door Lock System**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project14.md)   
   Physical access control with firmware hardening and lock bit protections.  
 
 ---
 
 ### 🤖 AI Security & Blue + Red Teaming
-- [**Agentic AI Abuse: Black-Box LLM Pentesting using Garak, Azure OpenAI & FastAPI**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  
+- [**Agentic AI Abuse: Black-Box LLM Pentesting using Garak, Azure OpenAI & FastAPI**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  ✅ 
   Automated red teaming of AI agents, testing excessive agency and prompt injection.
 
 - [**L7-Aegis: Layer 7 AI Threat Detection for LLM Applications (IDS)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
@@ -77,7 +77,7 @@
 ---
 
 ### 🎮 Miscellaneous / Creative
-- [**P5.js Game Development Project**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project16.md)  
+- [**P5.js Game Development Project**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project16.md)  ✅ 
   Interactive coding project with character movement, obstacles, and lives system.  
 
 ---
