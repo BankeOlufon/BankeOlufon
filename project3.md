@@ -1,75 +1,78 @@
-# 🛡️ Assumed-Breach Emulation & Security Controls Validation
+# 🛡️ Cloud Identity Attack Emulation & Security Controls Validation
 
 ## 📌 Project Overview
-A technical offensive simulation project executing multi-stage attack matrices against hardened corporate cloud infrastructure under an assumed-breach methodology.  
-This project shifts into the adversarial perspective to uncover directory misconfigurations, bypass boundary policies, compromise access tokens, and execute lateral movement — ultimately providing empirical validation data to test the visibility and response thresholds of the defensive infrastructure.
+
+An offensive security project focused on validating the resilience of enterprise Azure identity and cloud access controls under an assumed-breach methodology. This project simulates adversarial identity techniques, privilege escalation paths, and cloud resource abuse to evaluate authentication, authorization, and access management controls while identifying opportunities for defensive hardening.
 
 ---
 
 ## 🎯 Core Areas Covered
-- Cloud Penetration Testing & Post-Exploitation  
-- Adversarial Identity Tactics (OAuth Abuse, Token Theft)  
-- Lateral Movement & Privilege Escalation Testing  
-- Security Controls Validation & Purple-Team Reporting  
+
+- Cloud Identity Attack Simulation
+- Microsoft Entra ID Security Assessment
+- OAuth & Token-Based Attack Techniques
+- Privilege Escalation & Access Control Validation
+- Azure Resource Abuse
+- Security Controls Validation
 
 ---
 
 ## 🛠️ Technical Tasks & Functions Performed
 
 ### Identity Attack Emulation
-- Conducted external authentication testing (password spraying, credential stuffing).  
-- Emulated identity theft vectors: token theft, session hijacking, application consent phishing.  
-- Simulated malicious OAuth app authorization to test persistence and mailbox extraction.  
 
-### Infrastructure Exploitation & Lateral Movement
-- Enumerated storage infrastructure for exposed blobs, public endpoints, and leaked access keys.  
-- Simulated host compromise on public-facing VMs to execute lateral movement.  
-- Abused overly permissive Managed Identities to escalate privileges and access Key Vaults.  
+- Conducted password spraying and credential stuffing simulations against enterprise identities.
+- Emulated OAuth consent phishing and malicious application authorization.
+- Simulated access token theft, refresh token abuse, and session hijacking scenarios.
+- Evaluated authentication controls including Conditional Access and Multi-Factor Authentication (MFA).
 
-### Defensive Control Attestation
-- Mapped offensive execution timestamps against SIEM dashboards to measure Time-to-Detect.  
-- Validated resilience of NSGs by attempting cross-subnet lateral movement.  
-- Authored mitigation reports translating exploitation paths into prioritized defensive hardening.  
+### Privilege Escalation & Cloud Resource Abuse
 
+- Enumerated Azure Storage resources for exposed blobs and overly permissive access.
+- Assessed Azure Key Vault access controls and secret exposure risks.
+- Evaluated Managed Identity configurations for privilege escalation opportunities.
+- Tested Azure RBAC assignments for excessive permissions and privilege inheritance.
+- Assessed Service Principals and application permissions for potential abuse paths.
 
+### Security Controls Validation
 
-<!-- ## 📊 Phase Mapping Context
-- Phase 7: Cloud Penetration Testing & Threat Emulation  
-- Phase 10: Controls Hardening & Post-Assessment Audit  
--->
+- Validated the effectiveness of Conditional Access policies against simulated identity attacks.
+- Assessed RBAC implementations using least-privilege principles.
+- Tested identity security controls against persistence and privilege escalation techniques.
+- Produced remediation guidance to strengthen identity governance and cloud access security.
 
-
+---
 
 ## 🔐 Security Outcomes
-- Validated detection and response thresholds under assumed breach conditions.  
-- Identified misconfigurations and privilege escalation paths.  
-- Produced actionable hardening recommendations for cloud infrastructure.  
+
+- Identified identity misconfigurations and excessive privilege assignments.
+- Validated Azure authentication and authorization controls against common cloud attack techniques.
+- Evaluated cloud resource access controls for privilege escalation opportunities.
+- Produced actionable hardening recommendations for Microsoft Entra ID and Azure resource security.
 
 ---
 
 ## 📚 Skills Demonstrated
-- Cloud penetration testing & adversarial simulation  
-- OAuth abuse and identity attack emulation  
-- Privilege escalation and lateral movement testing  
-- SIEM validation and purple-team reporting  
 
-
-
-<!-- ## 📷 Portfolio Artifacts
-[Placeholder: Attack path diagram]  
-[Placeholder: SIEM detection timeline screenshot]  
--->
+- Microsoft Entra ID Security
+- Cloud Identity Penetration Testing
+- Password Spraying & Credential Attacks
+- OAuth & Consent Phishing
+- Access Token & Session Abuse
+- Azure RBAC Security Assessment
+- Managed Identity Security
+- Service Principal Security
+- Azure Storage & Key Vault Security Assessment
+- Privilege Escalation Analysis
+- Security Controls Validation
+- Cloud Security Hardening
 
 ---
 
-<!-- ## 📈 Why This Matters to Employers
-Demonstrates ability to think like an adversary, validate defensive controls, and produce actionable hardening recommendations — critical for red team and purple team roles.
--->
-
-
-
 ## 🔗 Related Projects
-- [Enterprise Cloud Infrastructure & Identity Lifecycle Engineering](#)  
-- [Threat Detection Engineering & Distributed SIEM Operations](#)  
-- [Zero Trust Remote Endpoint Architecture & Cloud XDR Integration](#)  
-- [Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)](#)  
+
+- [Enterprise Cloud Infrastructure & Identity Lifecycle Engineering](#)
+- [Azure Infrastructure & Network Security Lab](#)
+- [Threat Detection Engineering & Distributed SIEM Operations](#)
+- [Zero Trust Remote Endpoint Architecture & Cloud XDR Integration](#)
+- [Multi-Cloud Security Posture (AWS + Azure + Datadog)](#)
