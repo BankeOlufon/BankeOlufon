@@ -3,19 +3,19 @@
 
 ---
 
-#### My portfolio showcases 20 hands‑on security projects spanning cloud defense, offensive tradecraft, IoT/embedded systems, AI red teaming, and creative coding. Each project is designed to demonstrate practical skills across the cybersecurity lifecycle - from building hardened cloud infrastructure and authoring custom detections, to emulating adversarial attacks and reverse engineering firmware. 
+#### My portfolio showcases 18 hands‑on security projects spanning cloud services, offensive security, IoT/embedded systems, AI red teaming, and creative coding. Each project is designed to demonstrate practical skills across the cybersecurity lifecycle - from building hardened cloud infrastructure and authoring custom detections, to emulating adversarial attacks and reverse engineering firmware. 
 #### The projects below highlight expertise in enterprise defense (Azure, AWS, Sentinel, XDR), red teaming and exploitation (OSCP‑style labs, AD pivots, SaaS pentesting), cyber‑physical security (IoT devices, RFID access control, firmware analysis), and emerging domains (AI agent abuse with Garak).
 
 ### [*Read my security-focused articles here!*](https://medium.com/@banke.olufon)
 
 ## 📂 Projects
 
-```| Portfolio Project                                                       | Required Roadmap Phases      |
+```| Portfolio Project                                                    | Required Roadmap Phases      |
 | ----------------------------------------------------------------------- | ---------------------------- |
-| **1. Azure Network Architecture & Security**                            | **Phases 5, 6, 7, 8 **     |
+| **1. Azure Network Architecture & Security**                            | **Phases 5, 6         **     |
 | **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
-| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 6, 7**     |
-| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 4, 6, 8** |
+| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 6, 7**           |
+| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 4, 6, 8**           |
 | **5. Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**  | **Phases 4, 12**             |
 ```
 
@@ -55,7 +55,7 @@
 ### 📡 IoT / Embedded & Cyber-Physical Security
 - [**Bratz Cyberdeck Camera: Hardened IoT Media Deck (ESP32-S3)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project11.md)  
   Secure cyberdeck camera with encryption, BLE privacy, and anti‑tamper routines.  
-- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)   
+- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)  ✅ 
   Sensor fusion for visually impaired navigation with cyber‑physical threat modeling.  
 - [**IoT Firmware Reverse Engineering & Vulnerability Research Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project13.md)  
   Binwalk, Ghidra, and QEMU analysis of IoT firmware binaries.  
