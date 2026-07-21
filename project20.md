@@ -1,72 +1,86 @@
 # 🌐 Azure Infrastructure & Network Security Lab
 
 ## 📌 Project Overview
-A security assessment of **Azure networking and infrastructure configurations**, focusing on how misconfigurations can expose cloud environments.  
-This project simulates adversarial tradecraft targeting NSG rules, public VM exposure, lateral movement, and private endpoint bypass scenarios.
+
+Designed and secured an enterprise-style Azure infrastructure, focusing on network segmentation, virtual machine security, and cloud attack surface reduction. This project simulates common cloud misconfigurations and adversarial techniques, including public VM exposure, NSG rule abuse, lateral movement, and private endpoint bypass scenarios to validate infrastructure security controls.
 
 ---
 
 ## 🎯 Core Areas Covered
-- Virtual Network & Subnet Architecture  
-- NSG & ASG Rule Testing  
-- Public vs. Private Endpoint Exposure  
-- Lateral Movement Simulation  
-- Infrastructure Logging & Sentinel Integration  
+
+- Virtual Network & Subnet Architecture
+- Network Security Groups (NSGs)
+- Application Security Groups (ASGs)
+- Virtual Machine Security
+- Public vs Private Endpoint Exposure
+- Network Segmentation
+- Lateral Movement Simulation
+- Azure Infrastructure Security Validation
 
 ---
 
 ## 🛠️ Technical Tasks & Functions Performed
 
-### Virtual Network & Subnet Setup
-- Created VNets, address spaces, and subnets with NAT configuration.  
-- Assigned public vs. private IPs to validate exposure risks.  
+### Virtual Network & Subnet Architecture
 
-### Network Security Group (NSG) Testing
-- Configured inbound/outbound NSG rules.  
-- Simulated misconfigurations to observe unintended access paths.  
-- Applied Application Security Groups (ASGs) for segmentation.  
+- Designed Azure Virtual Networks with segmented address spaces and dedicated subnets.
+- Configured public and private IP addressing to evaluate infrastructure exposure.
+- Implemented network segmentation to separate workloads across security boundaries.
 
-### VM Deployment & Exposure
-- Deployed Windows and Linux VMs with varied sizes and managed disks.  
-- Tested secure access via Bastion and Just‑In‑Time (JIT) VM access.  
-- Simulated public VM exposure and lateral movement from compromised hosts.  
+### Network Security Groups (NSGs)
 
-### Endpoint Security
-- Configured service endpoints and private endpoints.  
-- Tested bypass scenarios to validate segmentation enforcement.  
-- Reviewed DNS basics in Azure for secure resolution.  
+- Configured inbound and outbound NSG rules.
+- Tested rule precedence and access restrictions.
+- Simulated NSG misconfigurations to identify unintended access paths.
+- Implemented Application Security Groups (ASGs) to simplify security policy management.
 
-### Defender for Cloud & Logging
-- Enabled Microsoft Defender for Cloud with secure score and recommendations.  
-- Collected NSG flow logs, Windows Event Logs, and Linux Syslog.  
-- Verified ingestion into Log Analytics and Sentinel for detection.  
+### Virtual Machine Deployment
+
+- Deployed Windows and Linux virtual machines.
+- Configured networking, managed disks, and network interfaces.
+- Validated secure remote administration using Azure Bastion and Just-In-Time (JIT) VM access.
+- Verified inter-subnet communication and network isolation.
+
+### Infrastructure Security
+
+- Configured service endpoints and private endpoints.
+- Evaluated public versus private resource accessibility.
+- Reviewed Azure DNS behaviour for secure name resolution.
+- Validated segmentation controls across infrastructure resources.
+
+### Cloud Security Validation
+
+- Simulated public VM exposure.
+- Tested NSG rule abuse and network segmentation weaknesses.
+- Performed lateral movement simulations between virtual machines.
+- Evaluated Azure networking controls against common cloud attack scenarios.
 
 ---
 
 ## 🔐 Security Outcomes
-- Identified risks in NSG misconfigurations and public VM exposure.  
-- Validated segmentation controls with ASGs and private endpoints.  
-- Demonstrated lateral movement detection through infrastructure logging.  
-- Strengthened monitoring with Defender for Cloud secure score and alerts.  
+
+- Identified security risks associated with publicly exposed virtual machines.
+- Validated effective network segmentation using VNets, NSGs, and ASGs.
+- Demonstrated secure remote administration through Bastion and JIT access.
+- Evaluated Azure infrastructure resilience against common cloud attack techniques.
+- Verified security boundary enforcement using private networking controls.
 
 ---
 
 ## 📚 Skills Demonstrated
-- Azure network segmentation and NSG rule testing  
-- VM deployment, Bastion/JIT access, and exposure analysis  
-- Endpoint security (service vs. private endpoints)  
-- Infrastructure logging and Sentinel integration  
-- Microsoft Defender for Cloud monitoring
 
-Windows Event Logs ─┐
-                    │
-Linux Syslog ───────┤
-                    ▼
-        Azure Monitor Agent (AMA)
-                    ▼
-      Log Analytics Workspace
-                    ▼
-      Microsoft Sentinel
+- Azure Virtual Networking
+- Virtual Network & Subnet Design
+- Network Security Groups (NSGs)
+- Application Security Groups (ASGs)
+- Virtual Machine Deployment & Hardening
+- Azure Bastion & Just-In-Time (JIT) Access
+- Private Endpoints & Service Endpoints
+- Network Segmentation
+- Cloud Infrastructure Security
+- Azure Network Pentesting
+- Lateral Movement Simulation
+- Infrastructure Security Validation
 
 ---
 
@@ -83,14 +97,8 @@ Linux Syslog ───────┤
 <img width="643" height="171" alt="image" src="https://github.com/user-attachments/assets/3c66080d-a6a0-40b1-8720-4babd554ba47" />
 <img width="902" height="116" alt="image" src="https://github.com/user-attachments/assets/e00e4e0b-f154-4523-aa5e-c0ea1b64f075" />
 <img width="646" height="192" alt="image" src="https://github.com/user-attachments/assets/dd865d8b-1054-4f91-ad07-015be4628b93" />
-<img width="771" height="34" alt="image" src="https://github.com/user-attachments/assets/5b44347d-8b8c-4830-9a7c-7325b1eab543" />
-<img width="356" height="559" alt="image" src="https://github.com/user-attachments/assets/4f866fe6-888d-43e4-af79-1e37848fdfc7" />
-<img width="887" height="470" alt="image" src="https://github.com/user-attachments/assets/6eb951e6-2d92-4ee0-ba7e-3ab5c689bb19" />
 
 
 
-## 🔗 Related Projects
-- [Enterprise Cloud Infrastructure & Identity Lifecycle Engineering](#)  
-- [Threat Detection Engineering & Distributed SIEM Operations](#)  
-- [Assumed-Breach Emulation & Security Controls Validation](#)  
-- [Zero Trust Remote Endpoint Architecture & Cloud XDR Integration](#)  
+
+
