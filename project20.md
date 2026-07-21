@@ -1,4 +1,4 @@
-# 🌐Azure Network Architecture & Infrastructure Hardening
+# 🌐Azure Network Architecture & Security
 
 ## 📌 Project Overview
 
