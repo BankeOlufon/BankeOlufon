@@ -82,6 +82,10 @@ Linux Syslog ───────┤
 <img width="650" height="452" alt="image" src="https://github.com/user-attachments/assets/fb02220d-fb48-4960-9e49-06e75b9a96c1" />
 <img width="389" height="294" alt="image" src="https://github.com/user-attachments/assets/ce04017e-90c6-4797-841d-7c5bd5741012" />
 <img width="882" height="586" alt="image" src="https://github.com/user-attachments/assets/e7b393df-b260-4856-b936-8bf86c82b3a1" />
+<img width="469" height="61" alt="image" src="https://github.com/user-attachments/assets/82de2732-df73-4702-8986-fa0865546e25" />
+<img width="643" height="171" alt="image" src="https://github.com/user-attachments/assets/3c66080d-a6a0-40b1-8720-4babd554ba47" />
+<img width="902" height="116" alt="image" src="https://github.com/user-attachments/assets/e00e4e0b-f154-4523-aa5e-c0ea1b64f075" />
+<img width="646" height="192" alt="image" src="https://github.com/user-attachments/assets/dd865d8b-1054-4f91-ad07-015be4628b93" />
 
 
 
