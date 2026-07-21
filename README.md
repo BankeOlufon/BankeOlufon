@@ -1,13 +1,14 @@
 # Banke Olufon
 
-<a href="https://www.linkedin.com/in/banke-olufon/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/banke-olufon/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://medium.com/@banke.olufon/"><img src="https://img.shields.io/badge/Medium-white?style=for-the-badge&logo=medium&logoColor=black&labelColor=white&color=white" /></a>
+
 
 ---
 
 #### My portfolio showcases 18 hands‑on security projects spanning cloud services, offensive security, IoT/embedded systems, AI red teaming, and creative coding. Each project is designed to demonstrate practical skills across the cybersecurity lifecycle - from building hardened cloud infrastructure and authoring custom detections, to emulating adversarial attacks and reverse engineering firmware. 
 #### The projects below highlight expertise in enterprise defense (Azure, AWS, Sentinel, XDR), AI red teaming and exploitation (OSCP‑style labs, AD pivots, cloud pentesting), cyber‑physical security (IoT devices, RFID access control, firmware analysis), and emerging domains (AI agent abuse with Garak).
 
-### [*Read my security-focused articles here!*](https://medium.com/@banke.olufon)
+### [*Read my security articles here!*](https://medium.com/@banke.olufon)
 
 ## 📂 Projects
 
