@@ -35,7 +35,7 @@
  🛜 Network Security
 - [**Azure Infrastructure Security & Network Attack Simulation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md)
 
-  Simulated misconfigurations such as public VM exposure, lateral movement from compromised VMs, and private endpoint bypasses
+  This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to       establish a resilient cloud infrastructure
 
 - [**ARP Spoofing on a Wireless Network**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  ✅ 
   MITM attack emulation with detection and mitigation strategies.
