@@ -1,4 +1,4 @@
-# 🌐 Azure Infrastructure & Network Security Lab
+# 🌐Azure Network Architecture & Infrastructure Hardening
 
 ## 📌 Project Overview
 
