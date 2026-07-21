@@ -2,20 +2,20 @@
 
 ## 📌 Project Overview
 
-Designed and secured an enterprise-style Azure infrastructure, focusing on network segmentation, virtual machine security, and cloud attack surface reduction. This project simulates common cloud misconfigurations and adversarial techniques, including public VM exposure, NSG rule abuse, lateral movement, and private endpoint bypass scenarios to validate infrastructure security controls.
+Designed and secured an enterprise-style Azure infrastructure, focusing on secure network architecture, workload isolation, virtual machine deployment, and infrastructure hardening. This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to establish a resilient cloud infrastructure aligned with enterprise security best practices.
 
 ---
 
 ## 🎯 Core Areas Covered
 
-- Virtual Network & Subnet Architecture
+- Azure Virtual Network & Subnet Architecture
 - Network Security Groups (NSGs)
 - Application Security Groups (ASGs)
-- Virtual Machine Security
-- Public vs Private Endpoint Exposure
+- Virtual Machine Deployment & Security
+- Azure Bastion & Just-In-Time (JIT) Access
+- Private Endpoints & Service Endpoints
 - Network Segmentation
-- Lateral Movement Simulation
-- Azure Infrastructure Security Validation
+- Azure Infrastructure Validation
 
 ---
 
@@ -25,50 +25,51 @@ Designed and secured an enterprise-style Azure infrastructure, focusing on netwo
 
 <img width="498" height="257" alt="image" src="https://github.com/user-attachments/assets/228e238a-cdab-45c2-88a4-ee111f451d88" />
 
-
 ### Virtual Network & Subnets
 
 - Designed Azure Virtual Networks with segmented address spaces and dedicated subnets.
-- Configured public and private IP addressing to evaluate infrastructure exposure.
-- Implemented network segmentation to separate workloads across security boundaries.
+- Configured public and private IP addressing based on workload requirements.
+- Implemented network segmentation to isolate workloads across security boundaries.
+- Validated secure routing and communication between network segments.
 
 ### Network Security Groups (NSGs)
 
-- Configured inbound and outbound NSG rules.
-- Tested rule precedence and access restrictions.
-- Simulated NSG misconfigurations to identify unintended access paths.
-- Implemented Application Security Groups (ASGs) to simplify security policy management.
+- Configured inbound and outbound Network Security Group (NSG) rules.
+- Tested rule precedence and traffic filtering behaviour.
+- Applied Application Security Groups (ASGs) to simplify security policy management.
+- Verified least-privilege network access between infrastructure components.
 
 ### Virtual Machine Deployment
 
-- Deployed Windows and Linux virtual machines.
-- Configured networking, managed disks, and network interfaces.
-- Validated secure remote administration using Azure Bastion and Just-In-Time (JIT) VM access.
-- Verified inter-subnet communication and network isolation.
+- Deployed Windows and Linux virtual machines within dedicated subnets.
+- Configured managed disks, virtual network interfaces, and IP configurations.
+- Implemented secure administrative access using Azure Bastion and Just-In-Time (JIT) VM access.
+- Validated inter-subnet communication and network isolation.
 
 ### Infrastructure Security
 
-- Configured service endpoints and private endpoints.
+- Configured Azure Service Endpoints and Private Endpoints.
 - Evaluated public versus private resource accessibility.
 - Reviewed Azure DNS behaviour for secure name resolution.
-- Validated segmentation controls across infrastructure resources.
+- Verified secure connectivity between infrastructure resources.
 
-### Cloud Security Validation
+### Infrastructure Validation
 
-- Simulated public VM exposure.
-- Tested NSG rule abuse and network segmentation weaknesses.
-- Performed lateral movement simulations between virtual machines.
-- Evaluated Azure networking controls against common cloud attack scenarios.
+- Validated network segmentation across Azure workloads.
+- Verified Azure Bastion and Just-In-Time (JIT) administrative access.
+- Tested Network Security Group rule effectiveness.
+- Confirmed secure communication between virtual machines and Azure services.
+- Reviewed private networking implementation against Azure security best practices.
 
 ---
 
 ## 🔐 Security Outcomes
 
-- Identified security risks associated with publicly exposed virtual machines.
-- Validated effective network segmentation using VNets, NSGs, and ASGs.
-- Demonstrated secure remote administration through Bastion and JIT access.
-- Evaluated Azure infrastructure resilience against common cloud attack techniques.
-- Verified security boundary enforcement using private networking controls.
+- Implemented secure Azure network segmentation using VNets, NSGs, and ASGs.
+- Reduced unnecessary public exposure through private networking and controlled administrative access.
+- Demonstrated secure remote administration using Azure Bastion and Just-In-Time (JIT).
+- Validated secure communication across segmented Azure workloads.
+- Established a resilient Azure infrastructure aligned with cloud networking best practices.
 
 ---
 
@@ -78,15 +79,16 @@ Designed and secured an enterprise-style Azure infrastructure, focusing on netwo
 - Virtual Network & Subnet Design
 - Network Security Groups (NSGs)
 - Application Security Groups (ASGs)
-- Virtual Machine Deployment & Hardening
-- Azure Bastion & Just-In-Time (JIT) Access
-- Private Endpoints & Service Endpoints
+- Azure Virtual Machine Deployment
+- Azure Bastion
+- Just-In-Time (JIT) VM Access
+- Private Endpoints
+- Service Endpoints
+- Azure DNS
 - Network Segmentation
-- Cloud Infrastructure Security
-- Azure Network Pentesting
-- Lateral Movement Simulation
+- Cloud Infrastructure Hardening
+- Azure Network Architecture
 - Infrastructure Security Validation
-
 ---
 
 <img width="623" height="116" alt="image" src="https://github.com/user-attachments/assets/02c86492-f245-401c-81d8-1cda31391eb8" />
