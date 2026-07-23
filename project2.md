@@ -31,14 +31,6 @@ This project showcases the end-to-end configuration of Microsoft Sentinel, onboa
 - Conducted deep-dive behavioral investigations across correlated telemetry tables (e.g., sign-in failures linked to key vault secret extraction attempts).  
 - Mapped engineered alerts and hunting queries directly to tactics in the MITRE ATT&CK Cloud Matrix.  
 
----
-
-<!-- ## 📊 Phase Mapping Context
-- Phase 3: Monitoring Ingestion & Sentinel Foundation  
-- Phase 6: Enterprise Activity Stream & Telemetry Generation  
-- Phase 8: Cloud Detection Engineering & KQL Analytics  
-- Phase 9: SOC Operations & Threat Inversion Tracking  
--->
 
 ---
 
@@ -58,21 +50,9 @@ This project showcases the end-to-end configuration of Microsoft Sentinel, onboa
 - SOC workflow design  
 
 ---
-<!--
-## 📷 Portfolio Artifacts
-[Placeholder: Sentinel dashboard screenshot]  
-[Placeholder: KQL detection rule snippet]  
+<img width="566" height="350" alt="image" src="https://github.com/user-attachments/assets/e6cffb32-84d2-438f-9e35-ca376138b5de" />
+<img width="851" height="256" alt="image" src="https://github.com/user-attachments/assets/436d56ec-fa07-467f-b83f-78196ec97c7c" />
+<img width="850" height="305" alt="image" src="https://github.com/user-attachments/assets/d8ab2a82-8521-4f65-9949-75424d62c892" />
+<img width="764" height="212" alt="image" src="https://github.com/user-attachments/assets/e037637b-93d3-47e4-a034-60f1161c3509" />
+<img width="587" height="398" alt="image" src="https://github.com/user-attachments/assets/1e2bc4b9-1336-475d-957a-dcc2a34cf99a" />
 
----
-
-<!-- ## 📈 Why This Matters to Employers
-Shows ability to design enterprise SIEM pipelines, engineer custom detections, and validate SOC workflows against adversary simulations — critical Tier 1/2 SOC analyst skills.
--->
-
----
-
-## 🔗 Related Projects
-- [Enterprise Cloud Infrastructure & Identity Lifecycle Engineering](#)  
-- [Assumed-Breach Emulation & Security Controls Validation](#)  
-- [Zero Trust Remote Endpoint Architecture & Cloud XDR Integration](#)  
-- [Multi-Cloud Security Posture (AWS + Azure + Wiz/Trend Micro)](#)  
