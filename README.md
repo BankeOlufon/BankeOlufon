@@ -45,7 +45,7 @@
 ---
 
 ### 🔒 Offensive Security & Red Teaming
-- [**Linux Web App Exploitation Lab (Initial Access)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project6.md)  
+- [**Web Application Penetration Testing & Lateral Movement**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project6.md)  
   OSCP‑style exploitation of vulnerable Linux web applications.  
 - [**Windows Privilege Escalation Lab (Local Takeover)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project7.md)  
   Misconfigurations leveraged to escalate from user to SYSTEM.  
