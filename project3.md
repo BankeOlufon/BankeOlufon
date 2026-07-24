@@ -10,7 +10,6 @@ An offensive security project focused on validating the resilience of enterprise
 
 - Cloud Identity Attack Simulation
 - Microsoft Entra ID Security Assessment
-- OAuth & Token-Based Attack Techniques
 - Privilege Escalation & Access Control Validation
 - Azure Resource Abuse
 - Security Controls Validation
@@ -66,6 +65,35 @@ An offensive security project focused on validating the resilience of enterprise
 - Privilege Escalation Analysis
 - Security Controls Validation
 - Cloud Security Hardening
+
+---
+
+## Random Section:
+
+port scans + wireshark + network watcher investigation phase 7
+
+External Reconnaissance Investigation (Port 21 Anomaly)
+
+Problem
+
+Nmap reported TCP/21 as open (ftp), despite no FTP service being intentionally deployed.
+
+Investigation
+
+✅ Verified no local listener using Get-NetTCPConnection.
+✅ Attempted manual FTP connection; no banner was returned and the connection eventually timed out.
+✅ Verified Azure NSG using IP Flow Verify; inbound traffic was denied by the DenyAllInBound rule.
+✅ Captured traffic with Wireshark (tcp.port == 21); no packets reached the Windows VM.
+
+Conclusion
+
+The reported service could not be validated from the operating system.
+Evidence suggests the observed result was not an exposed FTP service on the VM.
+Reconnaissance tools should always be validated with host- and network-level evidence before drawing conclusions.
+
+<img width="256" height="74" alt="image" src="https://github.com/user-attachments/assets/1e1e3eea-7e9b-4dd1-b5ac-d6995e74bf15" />
+<img width="263" height="47" alt="image" src="https://github.com/user-attachments/assets/6eea0a35-af97-4c04-9fba-58d6da1bdedc" />
+<img width="547" height="176" alt="image" src="https://github.com/user-attachments/assets/a047b1b2-5ee8-4a28-882f-62743797fb05" />
 
 ---
 
