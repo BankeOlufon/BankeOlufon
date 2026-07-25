@@ -24,7 +24,7 @@
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
 - [**Multi-Cloud Security Posture (AWS + Azure + Datadog)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
   Unified dashboard for toxic combination detection across AWS and Azure.
-- [**Azure Advanced Security Hardening Project** Project 21] 
+- [**Azure Zero Trust Security Architecture** Project 21] 
   Implemented advanced security controls across Azure networking, compute, and data services to close critical gaps in platform protection, workload             hardening, and storage/database security. 
 ---
  🛜 Network Security
