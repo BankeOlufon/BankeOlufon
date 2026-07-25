@@ -50,11 +50,13 @@ This project showcases the end-to-end configuration of Microsoft Sentinel, onboa
 - SOC workflow design  
 
 ---
-<img width="566" height="350" alt="image" src="https://github.com/user-attachments/assets/e6cffb32-84d2-438f-9e35-ca376138b5de" />
-<img width="851" height="256" alt="image" src="https://github.com/user-attachments/assets/436d56ec-fa07-467f-b83f-78196ec97c7c" />
-<img width="850" height="305" alt="image" src="https://github.com/user-attachments/assets/d8ab2a82-8521-4f65-9949-75424d62c892" />
-<img width="764" height="212" alt="image" src="https://github.com/user-attachments/assets/e037637b-93d3-47e4-a034-60f1161c3509" />
+<img width="791" height="328" alt="image" src="https://github.com/user-attachments/assets/dedea3b3-4a56-4275-934f-0c646d0451a1" />
+<img width="317" height="415" alt="image" src="https://github.com/user-attachments/assets/4479d0ac-e382-4c78-9cf3-34baaffbb710" />
 <img width="587" height="398" alt="image" src="https://github.com/user-attachments/assets/1e2bc4b9-1336-475d-957a-dcc2a34cf99a" />
 <img width="428" height="374" alt="image" src="https://github.com/user-attachments/assets/ae9a0ff2-35ed-4e5d-89e5-6ec89b5967e2" />
+<img width="755" height="312" alt="image" src="https://github.com/user-attachments/assets/21265eb2-7fe9-4267-b64b-c960595b2e0d" />
+<img width="562" height="244" alt="image" src="https://github.com/user-attachments/assets/52bf361f-1b9d-4840-aba3-fd88241b73c5" />
+<img width="272" height="398" alt="image" src="https://github.com/user-attachments/assets/77b598e0-dda0-4fb4-9b41-287bae3d65bf" />
+<img width="264" height="55" alt="image" src="https://github.com/user-attachments/assets/c6947803-ab84-42b6-9941-ac77eefacb56" />
 
 
