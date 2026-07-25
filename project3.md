@@ -20,23 +20,17 @@ An offensive security project focused on validating the resilience of enterprise
 
 ### Identity Attack Emulation
 
-- Conducted password spraying and credential stuffing simulations against enterprise identities.
-- Emulated OAuth consent phishing and malicious application authorization.
-- Simulated access token theft, refresh token abuse, and session hijacking scenarios.
+- Conducted password spraying and lateral movement simulations against enterprise identities.
 - Evaluated authentication controls including Conditional Access and Multi-Factor Authentication (MFA).
 
 ### Privilege Escalation & Cloud Resource Abuse
 
-- Enumerated Azure Storage resources for exposed blobs and overly permissive access.
-- Assessed Azure Key Vault access controls and secret exposure risks.
 - Evaluated Managed Identity configurations for privilege escalation opportunities.
 - Tested Azure RBAC assignments for excessive permissions and privilege inheritance.
-- Assessed Service Principals and application permissions for potential abuse paths.
 
 ### Security Controls Validation
 
 - Validated the effectiveness of Conditional Access policies against simulated identity attacks.
-- Assessed RBAC implementations using least-privilege principles.
 - Tested identity security controls against persistence and privilege escalation techniques.
 - Produced remediation guidance to strengthen identity governance and cloud access security.
 
@@ -56,7 +50,6 @@ An offensive security project focused on validating the resilience of enterprise
 - Microsoft Entra ID Security
 - Cloud Identity Penetration Testing
 - Password Spraying & Credential Attacks
-- Azure RBAC Security Assessment
 - Managed Identity Security
 - Privilege Escalation Analysis
 - Security Controls Validation
