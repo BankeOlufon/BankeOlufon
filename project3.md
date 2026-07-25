@@ -2,64 +2,143 @@
 
 ## 📌 Project Overview
 
-An offensive security project focused on validating the resilience of enterprise Azure identity and cloud access controls under an assumed-breach methodology. This project simulates adversarial identity techniques, privilege escalation paths, and cloud resource abuse to evaluate authentication, authorization, and access management controls while identifying opportunities for defensive hardening.
+An offensive cloud security project focused on validating the resilience of Microsoft Entra ID identity controls under an assumed-breach methodology.
+
+The project simulates common cloud identity attacks against an Azure enterprise environment to assess authentication and authorization controls. Security controls are then hardened to verify that the attacks are successfully mitigated.
 
 ---
 
-## 🎯 Core Areas Covered
+# 🎯 Objectives
 
-- Cloud Identity Attack Simulation
-- Microsoft Entra ID Security Assessment
-- Privilege Escalation & Access Control Validation
-- Azure Resource Abuse
-- Security Controls Validation
-
----
-
-## 🛠️ Technical Tasks & Functions Performed
-
-### Identity Attack Emulation
-
-- Conducted password spraying and lateral movement simulations against enterprise identities.
-- Evaluated authentication controls including Conditional Access and Multi-Factor Authentication (MFA).
-
-### Privilege Escalation & Cloud Resource Abuse
-
-- Evaluated Managed Identity configurations for privilege escalation opportunities.
-- Tested Azure RBAC assignments for excessive permissions and privilege inheritance.
-
-### Security Controls Validation
-
-- Validated the effectiveness of Conditional Access policies against simulated identity attacks.
-- Tested identity security controls against persistence and privilege escalation techniques.
-- Produced remediation guidance to strengthen identity governance and cloud access security.
+- Simulate Azure identity attacks
+- Assess Microsoft Entra ID authentication controls
+- Evaluate Azure RBAC permissions
+- Identify excessive privilege assignments
+- Validate Conditional Access and MFA protections
+- Implement security hardening recommendations
+- Verify that implemented controls mitigate the attacks
 
 ---
 
-## 🔐 Security Outcomes
+# 🏗️ Lab Architecture
 
-- Identified identity misconfigurations and excessive privilege assignments.
-- Validated Azure authentication and authorization controls against common cloud attack techniques.
-- Evaluated cloud resource access controls for privilege escalation opportunities.
-- Produced actionable hardening recommendations for Microsoft Entra ID and Azure resource security.
+```text
+Attacker (Kali Linux)
+        │
+        ▼
+Microsoft Entra ID
+├── Enterprise Users
+├── Security Groups
+├── Azure RBAC
+├── Conditional Access
+└── Multi-Factor Authentication
+        │
+        ▼
+Azure Resources
+├── Resource Groups
+├── Storage Accounts
+├── Key Vault
+└── Virtual Machines
+```
 
 ---
 
-## 📚 Skills Demonstrated
+# ⚔️ Attack Scenarios
 
-- Microsoft Entra ID Security
-- Cloud Identity Penetration Testing
-- Password Spraying & Credential Attacks
-- Managed Identity Security
-- Privilege Escalation Analysis
+## Password Spraying
+
+**Objective**
+
+Assess the effectiveness of Microsoft Entra ID authentication controls against password spraying attacks.
+
+### Attack Workflow
+
+```text
+Attacker
+        │
+        ▼
+Multiple Azure Accounts
+        │
+        ▼
+Microsoft Entra ID
+        │
+        ▼
+Authentication Controls
+├── Smart Lockout
+├── Conditional Access
+└── Multi-Factor Authentication
+```
+
+Activities:
+
+- Password spraying against enterprise accounts
+- Validate Smart Lockout behaviour
+- Validate account lockout behaviour
+- Test MFA-protected accounts
+- Assess Conditional Access effectiveness
+
+---
+
+## Azure RBAC Assessment
+
+**Objective**
+
+Identify excessive permissions and validate least-privilege implementation.
+
+Activities:
+
+- Enumerate Azure RBAC assignments
+- Review role inheritance
+- Identify excessive permissions
+- Validate least-privilege implementation
+- Attempt privilege escalation through misconfigured RBAC assignments
+
+---
+
+# 🛡️ Security Controls Validation
+
+Validated:
+
+- Microsoft Entra ID authentication
+- Multi-Factor Authentication (MFA)
+- Conditional Access
+- Azure RBAC permissions
+- Least-privilege implementation
+
+---
+
+# 🔧 Security Hardening
+
+Following the assessment, the environment was hardened by:
+
+- Removing excessive RBAC permissions
+- Applying least-privilege principles
+- Strengthening Conditional Access policies
+- Enforcing MFA where appropriate
+- Producing remediation recommendations
+
+---
+
+# 📂 Project Artefacts
+
+- Azure RBAC role assignments
+- Conditional Access policy configuration
+- Microsoft Entra ID authentication screenshots
+- Password spraying test results
+- Security assessment notes
+- Hardening recommendations
+- Architecture diagrams
+
+---
+
+# 📚 Skills Demonstrated
+
+- Microsoft Entra ID
+- Azure RBAC
+- Password Spraying
+- Conditional Access
+- Multi-Factor Authentication (MFA)
+- Identity Security Assessment
+- Privilege Analysis
 - Security Controls Validation
 - Cloud Security Hardening
----
-
-## 🔗 Related Projects
-
-- [Enterprise Cloud Infrastructure & Identity Lifecycle Engineering](#)
-- [Azure Infrastructure & Network Security Lab](#)
-- [Threat Detection Engineering & Distributed SIEM Operations](#)
-- [Zero Trust Remote Endpoint Architecture & Cloud XDR Integration](#)
-- [Multi-Cloud Security Posture (AWS + Azure + Datadog)](#)
