@@ -1,53 +1,207 @@
-# 🛡️ Threat Detection Engineering & Distributed SIEM Operations
+# 🛡️ Threat Detection Engineering & SIEM Operations
 
 ## 📌 Project Overview
-A security operations engineering project focused on building a centralized logging architecture and telemetry ingestion pipeline across an enterprise cloud footprint.  
-This project showcases the end-to-end configuration of Microsoft Sentinel, onboarding diverse telemetry sources, and implementing custom detection analytics written in Kusto Query Language (KQL) to identify behavioral threat indicators.
+This security operations engineering project focuses on building a centralized Azure logging and monitoring environment using **Microsoft Sentinel**, **Log Analytics Workspace**, **Azure Monitor Agent (AMA)**, **Virtual Network Flow Logs**, **Traffic Analytics**, **Defender for Cloud**, **Automation Rules**, and **Azure Logic Apps**.
+
+The primary detection scenario identifies malicious external port scanning against Azure virtual machines by detecting external source IPs attempting connections to more than **15 unique destination ports within a one-hour window**.
 
 ---
 
-## 🎯 Core Areas Covered
-- Security Information & Event Management (SIEM) Architecture  
-- Enterprise Logging & Telemetry Ingestion Pipelines  
-- Detection Engineering & Behavioral Analytics (KQL)  
-- Incident Triage, Correlation, & SOC Workflows  
+## 🎯 Objectives
+- **Centralized Logging**: Build a unified logging architecture to aggregate Azure identity, endpoint, infrastructure, and network telemetry into a single Log Analytics Workspace.  
+- **Agent Deployment**: Configure Azure Monitor Agent (AMA) and Data Collection Rules (DCR) for OS-level log collection on Windows and Linux endpoints.  
+- **SIEM Integration**: Connect Microsoft Sentinel to the centralized workspace to establish detection, alerting, investigation, and response capabilities.  
+- **KQL Development**: Develop KQL queries for network flow validation, source IP scoping, threat hunting, detection, host investigation, and post-remediation validation.  
+- **Custom Detection Rule**: Create a Microsoft Sentinel Scheduled Analytics Rule designed to identify external port-scanning activity.  
+- **Entity & Framework Mapping**: Map alerts and incidents to Sentinel entities (IP Address, Host) and align detections with the MITRE ATT&CK framework.  
+- **SOAR Automation**: Configure Automation Rules and an Azure Logic App playbook to orchestrate response workflows.  
+- **Threat Intelligence Enrichment**: Query the AbuseIPDB API to enrich suspected attacker IP addresses with real-time reputation scores.  
+- **Automated Notifications**: Deliver rich email notifications to security analysts containing alert context and threat intelligence data.  
+- **Incident Investigation**: Establish structured investigation workflows using KQL to evaluate reconnaissance severity and scope.  
+- **Targeted Remediation**: Define manual remediation workflows to block malicious source IPs via Azure Network Security Group (NSG) deny rules.  
 
 ---
 
-## 🛠️ Technical Tasks & Functions Performed
+## 🏗️ Security Monitoring Architecture
 
-### Logging Architecture & Pipeline Engineering
-- Deployed a centralized Log Analytics Workspace with customized data retention, table schemas, and workspace-level access controls.  
-- Onboarded cloud-native audit engines, establishing diagnostic streams for Directory Sign-in Logs, Audit Logs, and provisioning events.  
-- Configured Data Collection Rules (DCRs) using the Azure Monitor Agent (AMA) to ship raw OS event logs into the repository.  
+### Telemetry Pipeline
 
-### SIEM Implementation & Detection Development
-- Provisioned Microsoft Sentinel and linked ingestion pipelines to parse multi-source data feeds.  
-- Developed custom Scheduled and Near Real-Time (NRT) detection rules using complex KQL queries.  
-- Configured automated incident routing and analytic logic grouping to consolidate multi-stage threat events.  
+```
+Microsoft Entra ID
+├── Sign-in Logs
+├── Audit Logs
+└── Provisioning Logs
 
-### SOC Analyst Incident Lifecycle Workflows
-- Built triage and investigation playbooks triggered by alerts.  
-- Conducted deep-dive behavioral investigations across correlated telemetry tables (e.g., sign-in failures linked to key vault secret extraction attempts).  
-- Mapped engineered alerts and hunting queries directly to tactics in the MITRE ATT&CK Cloud Matrix.  
+Azure Control Plane
+└── Azure Activity Logs
+
+Windows VM
+├── Azure Monitor Agent
+├── Windows Security Events
+├── Windows Event Logs
+└── Heartbeat
+
+Linux VM
+├── Azure Monitor Agent
+├── Syslog
+└── Heartbeat
+
+Azure Virtual Network
+└── Virtual Network Flow Logs
+↓
+Traffic Analytics
+↓
+Log Analytics Workspace
+↓
+Microsoft Sentinel
+├── Hunting Queries
+├── Analytics Rules
+├── Alerts
+├── Incidents
+├── Automation Rules
+└── Logic App Playbook
+├── AbuseIPDB Enrichment
+└── Email Notification 
+```
 
 
 ---
 
-## 🔐 Security Outcomes
-- Centralized telemetry ingestion across cloud-native sources.  
-- High-fidelity detection rules isolating anomalous behaviors.  
-- Automated incident routing and unified case investigations.  
-- SOC workflows mapped to adversary tactics.  
+## 📊 Centralized Telemetry Map
+
+| **Data Source** | **Scope** | **What it records** |
+|-----------------|-----------|----------------------|
+| SigninLogs | Microsoft Entra ID (Identity) | User sign-ins, MFA, Conditional Access, failed logins |
+| AuditLogs | Microsoft Entra ID (Identity) | User/group changes, password resets, app registrations, role assignments |
+| AzureActivity | Azure Control Plane (Subscription) | Resource creation, deletion, RBAC changes, policy changes |
+| AzureDiagnostics | Azure Resources | Diagnostic logs from Azure services (Key Vault, Storage, App Gateway, etc.) |
+| Event | Windows Endpoints | Windows Application, System and other Event Logs |
+| Heartbeat | Azure Arc / AMA-managed Endpoints | Agent health and connectivity |
+| Microsoft Defender for Cloud | Azure Resources | Security posture, recommendations, attack paths, cloud security alerts |
+| Virtual Network Flow Logs | Azure VNets | Network flows (source/destination IP, ports, protocol, allow/deny, bytes) |
+| Storage Logs | Azure Storage Accounts | Blob, file, queue and table access |
+| Key Vault Logs | Azure Key Vault | Secret, key and certificate access |
 
 ---
 
-## 📚 Skills Demonstrated
-- Microsoft Sentinel (KQL queries, playbooks)  
-- Azure Monitor Agent (AMA) pipelines  
-- Detection engineering & threat hunting  
-- MITRE ATT&CK framework application  
-- SOC workflow design  
+## 🔧 Azure Monitor Agent & Log Collection Setup
+The **Azure Monitor Agent (AMA)** was deployed across target virtual machines and linked to **Data Collection Rules (DCR)** to specify which operational events to collect and forward to the central Log Analytics Workspace.
+
+### Collected Telemetry Scope
+- **Windows VM Telemetry**:
+  - Successful (Event ID 4624) and failed (Event ID 4625) RDP logins  
+  - Windows Security Events & Audit Logs  
+  - Administrative PowerShell execution events  
+  - System file creation and modification activity  
+  - System & Application event logs  
+  - Periodic agent Heartbeat signals  
+
+---
+
+## 🔎 Detection Scenario: External Malicious Port Scanning
+
+**Detection Goal**  
+Detect external network reconnaissance targeting Azure virtual machines by isolating external source IP addresses attempting to connect to >15 distinct destination ports within 1 hour.
+
+**Core Detection Criteria**:
+- Direction: Inbound network flows (`FlowDirection == "Inbound"`)  
+- Origin: External IP addresses (excluding RFC 1918 private IP ranges)  
+- Status: Denied connection attempts (`FlowStatus == "Denied"`, `DeniedInFlows > 0`, or `FlowStatus == "Malicious"`)  
+- Threshold: `dcount(DestPort) > 15`  
+- Grouping: Grouped by Attacker IP, Target IP, and Target Machine  
+- Time Window: Rolling 1-hour window  
+
+---
+
+## 🧪 KQL Queries
+
+### External Port-Scanning Detection Rule
+```kql
+NTANetAnalytics
+| where TimeGenerated > ago(1h)
+| where SubType == "FlowLog" and FlowDirection == "Inbound"
+| where SrcIp !startswith "10."
+    and SrcIp !startswith "192.168."
+    and SrcIp !startswith "172."
+| where FlowStatus == "Denied"
+    or DeniedInFlows > 0
+    or FlowStatus == "Malicious"
+| summarize
+    DistinctPortsScanned = dcount(DestPort)
+    by SrcIp, DestIp, DestVm
+| where DistinctPortsScanned > 15
+| project
+    AttackerIP = SrcIp,
+    TargetMachine = DestVm,
+    DistinctPortsScanned
+```
+### ⚙️ Automation Rule & Logic App Orchestration
+
+```
+Analytics Rule Detects Port Scan
+        ↓
+Sentinel Generates Alert
+        ↓
+Automation Rule Evaluates Conditions
+        ↓
+Matching Alert Context Confirmed
+        ↓
+Logic App Playbook Initiated
+
+```
+### 🔄 Logic App Playbook & Threat Intelligence Integration
+
+```
+Microsoft Sentinel Alert Trigger
+        ↓
+Receive Alert Payload
+        ↓
+Extract Entities (Attacker IP, Target Host)
+        ↓
+HTTP GET Request to AbuseIPDB
+        ↓
+Parse IP Reputation Data
+        ↓
+Format HTML Alert Summary
+        ↓
+Send Office 365 Outlook Email
+
+```
+
+## 🔍 Investigation & Remediation Workflow
+Triage & Investigation Steps:
+
+Analyst receives automated email and opens Sentinel Incident.
+
+Review mapped AttackerIP and TargetMachine entities.
+
+Inspect AbuseIPDB confidence score and threat report history.
+
+### Remediation Process:
+
+```
+Sentinel Alert Triggered
+        ↓
+Analyst Conducts Network Evidence Review
+        ↓
+AbuseIPDB Threat Intelligence Verified
+        ↓
+Malicious Intent Confirmed
+        ↓
+Inbound Deny Rule Created in Azure NSG
+        ↓
+Subsequent Traffic Dropped & Validated
+
+```
+
+## 🔐 Security Outcomes & Project Achievements
+Centralized Security Infrastructure: Unified logs across Entra ID, Control Plane, VM OS logs, and Network Flow logs into Sentinel.
+
+Custom Detection Coverage: Operationalized a KQL detection rule targeting active reconnaissance.
+
+Framework Standardized: Aligned alerting with MITRE ATT&CK T1595 (Active Scanning).
+
+Automated SOAR Capabilities: Reduced MTTR
 
 ---
 <img width="791" height="328" alt="image" src="https://github.com/user-attachments/assets/dedea3b3-4a56-4275-934f-0c646d0451a1" />
