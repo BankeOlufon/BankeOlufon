@@ -55,4 +55,6 @@ This project showcases the end-to-end configuration of Microsoft Sentinel, onboa
 <img width="850" height="305" alt="image" src="https://github.com/user-attachments/assets/d8ab2a82-8521-4f65-9949-75424d62c892" />
 <img width="764" height="212" alt="image" src="https://github.com/user-attachments/assets/e037637b-93d3-47e4-a034-60f1161c3509" />
 <img width="587" height="398" alt="image" src="https://github.com/user-attachments/assets/1e2bc4b9-1336-475d-957a-dcc2a34cf99a" />
+<img width="428" height="374" alt="image" src="https://github.com/user-attachments/assets/ae9a0ff2-35ed-4e5d-89e5-6ec89b5967e2" />
+
 
