@@ -2,63 +2,68 @@
 
 ## 📌 Project Overview
 Established a hardware hacking and firmware emulation lab to reverse engineer IoT device operating systems.  
-This project demonstrates extraction of firmware binaries, unpacking Linux filesystems, and analyzing them for vulnerabilities such as hardcoded credentials, leaked cryptographic keys, and unsafe binaries.
+This project demonstrates extraction of firmware binaries, unpacking Linux filesystems, and analyzing them for vulnerabilities such as hardcoded credentials, leaked cryptographic keys, and unsafe binaries. Unlike source code review, this workflow focuses on **compiled binaries and filesystems**, demonstrating practical skills in firmware analysis.
+
+Target firmware: **Tasmota** (open-source IoT firmware for ESP8266/ESP32 smart devices).
 
 ---
 
 ## 🎯 Core Areas Covered
-- Firmware Acquisition & Binary Extraction  
-- Static Analysis of Linux Filesystems  
-- Vulnerability Discovery (Credentials, Keys, Unsafe Functions)  
-- Dynamic Emulation with QEMU  
+- **[Firmware Acquisition & Binary Extraction](ca://s?q=Download_Tasmota_firmware)**
+- **[Static Analysis of Linux Filesystems](ca://s?q=Inspect_Tasmota_filesystem)**
+- **[Vulnerability Discovery](ca://s?q=Find_credentials_in_Tasmota_firmware)**
+- **[Dynamic Emulation with QEMU](ca://s?q=Emulate_Tasmota_in_QEMU)**
 
 ---
 
-## 🛠️ Technical Tasks & Functions Performed
+## 🛠️ Technical Workflow
 
-### Reverse Engineering Workflow
-- Acquired firmware binaries from vendor sites.  
-- Used Binwalk to extract SquashFS/CramFS filesystems.  
-- Audited `/etc/shadow` and `/etc/passwd` for hardcoded credentials.  
-- Scanned directories for leaked cryptographic keys.  
-- Imported binaries into Ghidra to identify unsafe memory functions.  
+### Phase 1: Setup (15 min)
+- Environment: Kali Linux  
+- Tools: `binwalk`, `firmware-mod-kit`, `qemu`, `ghidra`, `wireshark`  
+- Firmware: Downloaded `tasmota.bin` release from GitHub
 
-### Dynamic Emulation
-- Emulated target architectures (MIPS/ARM) in QEMU.  
-- Executed extracted daemons in sandbox to observe traffic handling.  
+### Phase 2: Firmware Extraction (20 min)
+- Ran `binwalk -e tasmota.bin` to unpack filesystem  
+- Inspected `/etc/passwd`, `/etc/shadow`, and config files  
+- Searched for hardcoded MQTT credentials, Wi-Fi SSIDs, TLS keys
+
+### Phase 3: Static Analysis (30 min)
+- Imported binaries (e.g., `httpd`, `mqtt`) into Ghidra  
+- Identified unsafe functions (`strcpy`, `sprintf`, `gets`)  
+- Documented findings for portfolio
+
+### Phase 4: Dynamic Emulation (30 min)
+- Determined architecture (`file bin/busybox`) → emulated with QEMU  
+- Executed daemons (`httpd`) in sandbox mode  
+- Observed traffic with Wireshark/Tcpdump (HTTP/MQTT behavior)
+
+### Phase 5: Wrap-Up (25 min)
+- Summarized findings:
+  - Hardcoded MQTT credentials in configs  
+  - Leaked TLS/SSH keys in extracted files  
+  - Unsafe memory functions in binaries  
+- Framed workflow as acquisition → extraction → static analysis → dynamic emulation → findings
 
 ---
 
 ## 🔐 Security Outcomes
-- Discovered hardcoded administrative credentials.  
-- Identified leaked private SSH keys in production images.  
-- Flagged unsafe memory management functions vulnerable to buffer overflow.  
-- Validated vulnerabilities through dynamic emulation.  
+- Discovered hardcoded administrative credentials  
+- Identified leaked private SSH keys in production images  
+- Flagged unsafe memory management functions vulnerable to buffer overflow  
+- Validated vulnerabilities through dynamic emulation
 
 ---
 
 ## 📚 Skills Demonstrated
-- Firmware reverse engineering with Binwalk & FMK  
-- Static analysis with Ghidra/IDA Pro  
-- Dynamic emulation with QEMU  
-- IoT vulnerability research methodology  
+- **[Firmware reverse engineering](ca://s?q=Use_Binwalk_for_firmware_reverse_engineering)** with Binwalk & FMK  
+- **[Static analysis](ca://s?q=Analyze_Tasmota_binaries_in_Ghidra)** with Ghidra  
+- **[Dynamic emulation](ca://s?q=Emulate_Tasmota_in_QEMU)** with QEMU  
+- **IoT vulnerability research methodology**
 
 ---
 
-<!-- ## 📷 Portfolio Artifacts
-[Placeholder: Binwalk extraction output]  
-[Placeholder: Ghidra decompiled binary screenshot]  
--->
+## Artefacts
 
----
 
-<!-- ## 📈 Why This Matters to Employers
-Demonstrates ability to reverse engineer IoT firmware, identify vulnerabilities, and emulate systems for safe testing.
--->
 
----
-
-## 🔗 Related Projects
-- [Hardened IoT Media Deck (ESP32-S3)](#)  
-- [Smart Accessibility Navigation Node (Cyber-Physical IoT)](#)  
-- [Arduino Secure RFID Door Lock System](#)  
