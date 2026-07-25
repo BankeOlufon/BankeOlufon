@@ -16,7 +16,7 @@
 ### 🌐 Cloud Security & Enterprise Defense
 - [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)   
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
-- [**Threat Detection Engineering & Distributed SIEM Operations**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
+- [**Threat Detection Engineering & SIEM Operations in Azure**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
   Implements a centralized Azure security monitoring and threat detection system using Microsoft Sentinel, Logic Apps, and Log Analytics Workspace. The system leverages SOAR automation with Logic Apps to enrich alerts, as well as threat intelligence from enrichment sources. 
 - [**Cloud Identity Attack Emulation & Security Controls Validation**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project3.md)  
   Offensive simulations to validate defensive visibility and response thresholds.  
