@@ -12,17 +12,9 @@
 
 ## 📂 Projects
 
-```| Portfolio Project                                                    | Required Roadmap Phases      |
-| ----------------------------------------------------------------------- | ---------------------------- |
-| **1. Azure Network Architecture & Security**                            | **Phases 5, 6         **     |
-| **2. Enterprise Cloud Infrastructure & Identity Lifecycle Engineering** | **Phases 1, 2, 3, 4**        |
-| **3. Threat Detection Engineering & Distributed SIEM Operations**       | **Phases 3, 6, 7**           |
-| **4. Assumed-Breach Emulation & Security Controls Validation**          | **Phases 4, 6, 8**           |
-| **5. Zero Trust Remote Endpoint Architecture & Cloud XDR Integration**  | **Phases 4, 12**             |
-```
 
 ### 🌐 Cloud Security & Enterprise Defense
-- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)  ✅ 
+- [**Enterprise Cloud Infrastructure & Identity Lifecycle Engineering**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project1.md)   
   Identity boundaries, RBAC hardening, and secure Azure tenant setup.  
 - [**Threat Detection Engineering & Distributed SIEM Operations**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project2.md)  
   Centralized logging pipelines and custom KQL detections in Microsoft Sentinel.  
@@ -32,14 +24,15 @@
   Zero‑touch provisioning, EDR integration, and posture‑based conditional access.  
 - [**Multi-Cloud Security Posture (AWS + Azure + Datadog)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project5.md)  
   Unified dashboard for toxic combination detection across AWS and Azure.
-
+- [**Azure Advanced Security Hardening Project** Project 21] 
+  Implemented advanced security controls across Azure networking, compute, and data services to close critical gaps in platform protection, workload             hardening, and storage/database security. 
 ---
  🛜 Network Security
-- [**Azure Network Architecture & Security**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md) ✅
+- [**Azure Network Architecture & Security**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project20.md) 
 
   This project demonstrates the implementation and validation of core Azure networking services, secure administrative access, and private connectivity to       establish a resilient cloud infrastructure
 
-- [**ARP Spoofing on a Wireless Network**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  ✅ 
+- [**ARP Spoofing on a Wireless Network**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project10.md)  
   MITM attack emulation with detection and mitigation strategies.
 
 ---
@@ -57,7 +50,7 @@
 ### 📡 IoT / Embedded & Cyber-Physical Security
 - [**Bratz Cyberdeck Camera: Hardened IoT Media Deck (ESP32-S3)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project11.md)  
   Secure cyberdeck camera with encryption, BLE privacy, and anti‑tamper routines.  
-- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)  ✅ 
+- [**Smart Accessibility Navigation Node (Cyber-Physical IoT)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project12.md)  
   Sensor fusion for visually impaired navigation with cyber‑physical threat modeling.  
 - [**IoT Firmware Reverse Engineering & Vulnerability Research Lab**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project13.md)  
   Binwalk, Ghidra, and QEMU analysis of IoT firmware binaries.  
@@ -67,7 +60,7 @@
 ---
 
 ### 🤖 AI Security & Blue + Red Teaming
-- [**Agentic AI Abuse: Black-Box LLM Pentesting using Garak, Azure OpenAI & FastAPI**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)  ✅ 
+- [**Agentic AI Abuse: Black-Box LLM Pentesting using Garak, Azure OpenAI & FastAPI**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project15.md)   
   Automated red teaming of AI agents, testing excessive agency and prompt injection.
 
 - [**L7-Aegis: Layer 7 AI Threat Detection for LLM Applications (IDS)**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project17.md)  
@@ -79,7 +72,7 @@
 ---
 
 ### 🎮 Miscellaneous / Creative
-- [**P5.js Game Development Project**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project16.md)  ✅ 
+- [**P5.js Game Development Project**](https://github.com/BankeOlufon/BankeOlufon/blob/main/project16.md)  
   Interactive coding project with character movement, obstacles, and lives system.  
 
 ---
